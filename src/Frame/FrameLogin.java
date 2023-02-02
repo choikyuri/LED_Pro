@@ -21,32 +21,32 @@ public class FrameLogin extends JFrame {
 
 		BaseSet frame = new BaseSet();
 
-		// ¿Ê·Î°í ÀÌ¹ÌÁö
-		ImageIcon oflogo = new ImageIcon("image/frame/¿Ê.png"); // ±×¸²ºÒ·¯¿À±â
-		JLabel lblPCSR = new JLabel(oflogo); // ±×¸² ºÙÀÌ±â
+		// ì˜·ë¡œê³  ì´ë¯¸ì§€
+		ImageIcon oflogo = new ImageIcon("image/frame/ì˜·.png"); // ê·¸ë¦¼ë¶ˆëŸ¬ì˜¤ê¸°
+		JLabel lblPCSR = new JLabel(oflogo); // ê·¸ë¦¼ ë¶™ì´ê¸°
 		lblPCSR.setSize(350, 350);
 		lblPCSR.setLocation(125, 50);
 		frame.add(lblPCSR);
 
-		// Á¦¸ñ ÀÌ¹ÌÁö
-		ImageIcon title = new ImageIcon("image/frame/Á¦¸ñ.png"); // ±×¸²ºÒ·¯¿À±â
-		ImageIcon titleon = new ImageIcon("image/frame/Á¦¸ñon.png");
+		// ì œëª© ì´ë¯¸ì§€
+		ImageIcon title = new ImageIcon("image/frame/ì œëª©.png"); // ê·¸ë¦¼ë¶ˆëŸ¬ì˜¤ê¸°
+		ImageIcon titleon = new ImageIcon("image/frame/ì œëª©on.png");
 		JButton titlePCSR = new JButton(title);
 		frame.ButtonSet(titlePCSR, title, titleon);
 		titlePCSR.setSize(400, 200);
 		titlePCSR.setLocation(30, 500);
 		frame.add(titlePCSR);
 
-		// ¶óÀÎ ÀÌ¹ÌÁö
-		ImageIcon line = new ImageIcon("image/frame/line.png"); // ±×¸²ºÒ·¯¿À±â
-		JLabel lblLine = new JLabel(line); // ±×¸² ºÙÀÌ±â
+		// ë¼ì¸ ì´ë¯¸ì§€
+		ImageIcon line = new ImageIcon("image/frame/line.png"); // ê·¸ë¦¼ë¶ˆëŸ¬ì˜¤ê¸°
+		JLabel lblLine = new JLabel(line); // ê·¸ë¦¼ ë¶™ì´ê¸°
 		lblLine.setSize(600, 1);
 		lblLine.setLocation(0, 480);
 		frame.add(lblLine);
 
-		// ÆÀ ·Î°í ÀÌ¹ÌÁö
-		ImageIcon tName = new ImageIcon("image/frame/ÆÀ¸í.png");
-		ImageIcon tNameon = new ImageIcon("image/frame/ÆÀ¸íon.png");
+		// íŒ€ ë¡œê³  ì´ë¯¸ì§€
+		ImageIcon tName = new ImageIcon("image/frame/íŒ€ëª….png");
+		ImageIcon tNameon = new ImageIcon("image/frame/íŒ€ëª…on.png");
 		JButton teamName = new JButton();
 		frame.ButtonSet(teamName, tName, tNameon);
 		teamName.setSize(90, 240);
@@ -55,33 +55,33 @@ public class FrameLogin extends JFrame {
 
 		Font f1 = new Font("Noto Sans KR Medium", Font.BOLD, 15);
 
-		// id ±ÛÀÚ
+		// id ê¸€ì
 		ImageIcon id = new ImageIcon("image/frame/id.png");
 		JLabel lbId = new JLabel(id);
 		lbId.setBounds(100, 698, 40, 40);
 		lbId.setFont(f1);
 		frame.add(lbId);
 
-		// id ÀÔ·ÂÃ¢
+		// id ì…ë ¥ì°½
 		JTextField idBox = new JTextField();
 		idBox.setBounds(150, 705, 180, 30);
 		idBox.setFont(f1);
 		frame.add(idBox);
 
-		// pw ±ÛÀÚ
+		// pw ê¸€ì
 		ImageIcon pw = new ImageIcon("image/frame/pw.png");
 		JLabel lbPw = new JLabel(pw);
 		lbPw.setBounds(99, 740, 40, 40);
 		lbPw.setFont(f1);
 		frame.add(lbPw);
 
-		// pw ÀÔ·ÂÃ¢
+		// pw ì…ë ¥ì°½
 		JPasswordField pwBox = new JPasswordField();
 		pwBox.setBounds(150, 745, 180, 30);
 		pwBox.setFont(f1);
 		frame.add(pwBox);
 
-		// login ¹öÆ°
+		// login ë²„íŠ¼
 		ImageIcon login = new ImageIcon("image/frame/login.png");
 		ImageIcon loginon = new ImageIcon("image/frame/loginon.png");
 		JButton btnLogin = new JButton();
@@ -94,19 +94,19 @@ public class FrameLogin extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				if (idBox.getText().equals("LED") && pwBox.getText().equals("123")) {
-					JOptionPane.showMessageDialog(null, "È¯¿µÇÕ´Ï´Ù!");
+					JOptionPane.showMessageDialog(null, "í™˜ì˜í•©ë‹ˆë‹¤!");
 					new FrameStart();
 				} else {
 					if (idBox.getText().equals("")) {
-						JOptionPane.showMessageDialog(null, "¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+						JOptionPane.showMessageDialog(null, "ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 					} else {
 						if (!idBox.getText().equals("LED")) {
-							JOptionPane.showMessageDialog(null, "Á¸ÀçÇÏÁö ¾Ê´Â ¾ÆÀÌµğÀÔ´Ï´Ù.");
+							JOptionPane.showMessageDialog(null, "ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ì•„ì´ë””ì…ë‹ˆë‹¤.");
 						} else {
 							if (pwBox.getText().equals("")) {
-								JOptionPane.showMessageDialog(null, "ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+								JOptionPane.showMessageDialog(null, "ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 							} else {
-								JOptionPane.showMessageDialog(null, "ºñ¹Ğ¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
+								JOptionPane.showMessageDialog(null, "ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 							}
 						}
 					}
@@ -114,7 +114,7 @@ public class FrameLogin extends JFrame {
 			}
 		});
 
-		// ¹è°æÈ¿°ú Ã³¸®
+		// ë°°ê²½íš¨ê³¼ ì²˜ë¦¬
 		JLabel effect = new JLabel();
 		frame.backEffect(effect);
 

@@ -20,16 +20,16 @@ public class FrameProductSummerF extends JFrame {
 
 	public static class ProSuLtF extends JFrame {
 		public ProSuLtF() {
-			// ∞¥√º ª˝º∫
+			// Í∞ùÏ≤¥ ÏÉùÏÑ±
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ∑Œ∞ÌµÈ
+			// Î°úÍ≥†Îì§
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// ªÛ¥‹ ≈∏¿Ã∆≤(µø±◊∂ÛπÃ)
-			ImageIcon sult = new ImageIcon("image/product/ø©∂Û.png");
+			// ÏÉÅÎã® ÌÉÄÏù¥ÌãÄ(ÎèôÍ∑∏ÎùºÎØ∏)
+			ImageIcon sult = new ImageIcon("image/product/Ïó¨Îùº.png");
 			JLabel suLight = new JLabel(sult);
 			suLight.setBounds(115, 70, 350, 110);
 			frame.add(suLight);
@@ -50,11 +50,11 @@ public class FrameProductSummerF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/fø©∂Û1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fÏó¨Îùº1.png");
 					JLabel ltSet1 = new JLabel(set1);
 					ltSet1.setBounds(25, 25, 485, 485);
 					newF.add(ltSet1);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/79.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -68,11 +68,11 @@ public class FrameProductSummerF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/fø©∂Û2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fÏó¨Îùº2.png");
 					JLabel ltSet2 = new JLabel(set2);
 					ltSet2.setBounds(25, 25, 485, 485);
 					newF.add(ltSet2);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/93.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -86,11 +86,11 @@ public class FrameProductSummerF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/fø©∂Û3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fÏó¨Îùº3.png");
 					JLabel ltSet3 = new JLabel(set3);
 					ltSet3.setBounds(25, 25, 485, 485);
 					newF.add(ltSet3);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/108.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -102,7 +102,7 @@ public class FrameProductSummerF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop sultf1 = new Shop("Summer Light Set1(F)", 79,
-							new JLabel(new ImageIcon("image/product/fcart/fø©∂Û1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÏó¨Îùº1.png")));
 					MyShop.pCount++;
 					MyShop.add(sultf1);
 				}
@@ -111,7 +111,7 @@ public class FrameProductSummerF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop sultf2 = new Shop("Summer Light Set2(F)", 93,
-							new JLabel(new ImageIcon("image/product/fcart/fø©∂Û2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÏó¨Îùº2.png")));
 					MyShop.pCount++;
 					MyShop.add(sultf2);
 				}
@@ -120,12 +120,12 @@ public class FrameProductSummerF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop sultf3 = new Shop("Summer Light Set3(F)", 108,
-							new JLabel(new ImageIcon("image/product/fcart/fø©∂Û3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÏó¨Îùº3.png")));
 					MyShop.pCount++;
 					MyShop.add(sultf3);
 				}
 			});
-			// backπˆ∆∞
+			// backÎ≤ÑÌäº
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -136,10 +136,10 @@ public class FrameProductSummerF extends JFrame {
 					frame.dispose();
 				}
 			});
-			// mainπˆ∆∞
+			// mainÎ≤ÑÌäº
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// πË∞Ê»ø∞˙ √≥∏Æ
+			// Î∞∞Í≤ΩÌö®Í≥º Ï≤òÎ¶¨
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 
@@ -151,13 +151,13 @@ public class FrameProductSummerF extends JFrame {
 		public ProSuCoF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ∑Œ∞ÌµÈ
+			// Î°úÍ≥†Îì§
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// ªÛ¥‹ ≈∏¿Ã∆≤
-			ImageIcon suco = new ImageIcon("image/product/ø©ƒ.png");
+			// ÏÉÅÎã® ÌÉÄÏù¥ÌãÄ
+			ImageIcon suco = new ImageIcon("image/product/Ïó¨Ïø®.png");
 			JLabel suCool = new JLabel(suco);
 			suCool.setBounds(115, 70, 350, 110);
 			frame.add(suCool);
@@ -179,11 +179,11 @@ public class FrameProductSummerF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/fø©ƒ1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fÏó¨Ïø®1.png");
 					JLabel coSet1 = new JLabel(set1);
 					coSet1.setBounds(25, 25, 485, 485);
 					newF.add(coSet1);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/116.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -197,11 +197,11 @@ public class FrameProductSummerF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/fø©ƒ2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fÏó¨Ïø®2.png");
 					JLabel coSet2 = new JLabel(set2);
 					coSet2.setBounds(25, 25, 485, 485);
 					newF.add(coSet2);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/125.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -215,11 +215,11 @@ public class FrameProductSummerF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/fø©ƒ3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fÏó¨Ïø®3.png");
 					JLabel coSet3 = new JLabel(set3);
 					coSet3.setBounds(25, 25, 485, 485);
 					newF.add(coSet3);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/97.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -231,7 +231,7 @@ public class FrameProductSummerF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop sucof1 = new Shop("Summer Cool Set1(F)", 116,
-							new JLabel(new ImageIcon("image/product/fcart/fø©ƒ1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÏó¨Ïø®1.png")));
 					MyShop.pCount++;
 					MyShop.add(sucof1);
 				}
@@ -240,7 +240,7 @@ public class FrameProductSummerF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop sucof2 = new Shop("Summer Cool Set2(F)", 125,
-							new JLabel(new ImageIcon("image/product/fcart/fø©ƒ2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÏó¨Ïø®2.png")));
 					MyShop.pCount++;
 					MyShop.add(sucof2);
 				}
@@ -249,7 +249,7 @@ public class FrameProductSummerF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop sucof3 = new Shop("Summer Cool Set3(F)", 97,
-							new JLabel(new ImageIcon("image/product/fcart/fø©ƒ3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÏó¨Ïø®3.png")));
 					MyShop.pCount++;
 					MyShop.add(sucof3);
 				}
@@ -269,7 +269,7 @@ public class FrameProductSummerF extends JFrame {
 			// main
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// πË∞Ê»ø∞˙
+			// Î∞∞Í≤ΩÌö®Í≥º
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 
@@ -281,13 +281,13 @@ public class FrameProductSummerF extends JFrame {
 		public ProSuMtF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ∑Œ∞ÌµÈ
+			// Î°úÍ≥†Îì§
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// ªÛ¥‹ ≈∏¿Ã∆≤
-			ImageIcon sumt = new ImageIcon("image/product/ø©π¬.png");
+			// ÏÉÅÎã® ÌÉÄÏù¥ÌãÄ
+			ImageIcon sumt = new ImageIcon("image/product/Ïó¨ÎÆ§.png");
 			JLabel suMute = new JLabel(sumt);
 			suMute.setBounds(115, 70, 350, 110);
 			frame.add(suMute);
@@ -308,11 +308,11 @@ public class FrameProductSummerF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/fø©π¬1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fÏó¨ÎÆ§1.png");
 					JLabel mtSet1 = new JLabel(set1);
 					mtSet1.setBounds(25, 25, 485, 485);
 					newF.add(mtSet1);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/86.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -326,11 +326,11 @@ public class FrameProductSummerF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/fø©π¬2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fÏó¨ÎÆ§2.png");
 					JLabel mtSet2 = new JLabel(set2);
 					mtSet2.setBounds(25, 25, 485, 485);
 					newF.add(mtSet2);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/97.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -344,11 +344,11 @@ public class FrameProductSummerF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/fø©π¬3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fÏó¨ÎÆ§3.png");
 					JLabel mtSet3 = new JLabel(set3);
 					mtSet3.setBounds(25, 25, 485, 485);
 					newF.add(mtSet3);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/134.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -360,7 +360,7 @@ public class FrameProductSummerF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop sumtf1 = new Shop("Summer Mute Set1(F)", 86,
-							new JLabel(new ImageIcon("image/product/fcart/fø©π¬1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÏó¨ÎÆ§1.png")));
 					MyShop.pCount++;
 					MyShop.add(sumtf1);
 				}
@@ -369,7 +369,7 @@ public class FrameProductSummerF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop sumtf1 = new Shop("Summer Mute Set2(F)", 97,
-							new JLabel(new ImageIcon("image/product/fcart/fø©π¬2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÏó¨ÎÆ§2.png")));
 					MyShop.pCount++;
 					MyShop.add(sumtf1);
 				}
@@ -378,7 +378,7 @@ public class FrameProductSummerF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop sumtf1 = new Shop("Summer Mute Set3(F)", 134,
-							new JLabel(new ImageIcon("image/product/fcart/fø©π¬3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÏó¨ÎÆ§3.png")));
 					MyShop.pCount++;
 					MyShop.add(sumtf1);
 				}
@@ -398,7 +398,7 @@ public class FrameProductSummerF extends JFrame {
 			// main
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// πË∞Ê»ø∞˙
+			// Î∞∞Í≤ΩÌö®Í≥º
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 

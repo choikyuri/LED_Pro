@@ -21,13 +21,13 @@ public class FrameProductSpringF extends JFrame {
 		public ProSpBrF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ∑Œ∞ÌµÈ
+			// Î°úÍ≥†Îì§
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// ªÛ¥‹ ≈∏¿Ã∆≤
-			ImageIcon spbr = new ImageIcon("image/product/∫Ω∫Í.png");
+			// ÏÉÅÎã® ÌÉÄÏù¥ÌãÄ
+			ImageIcon spbr = new ImageIcon("image/product/Î¥ÑÎ∏å.png");
 			JLabel spBright = new JLabel(spbr);
 			spBright.setBounds(115, 70, 350, 110);
 			frame.add(spBright);
@@ -48,11 +48,11 @@ public class FrameProductSpringF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/f∫Ω∫Í1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fÎ¥ÑÎ∏å1.png");
 					JLabel brSet1 = new JLabel(set1);
 					brSet1.setBounds(25, 25, 485, 485);
 					newF.add(brSet1);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/93.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -66,11 +66,11 @@ public class FrameProductSpringF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/f∫Ω∫Í2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fÎ¥ÑÎ∏å2.png");
 					JLabel brSet2 = new JLabel(set2);
 					brSet2.setBounds(25, 25, 485, 485);
 					newF.add(brSet2);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/134.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -84,11 +84,11 @@ public class FrameProductSpringF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/f∫Ω∫Í3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fÎ¥ÑÎ∏å3.png");
 					JLabel brSet3 = new JLabel(set3);
 					brSet3.setBounds(25, 25, 485, 485);
 					newF.add(brSet3);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/108.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -100,7 +100,7 @@ public class FrameProductSpringF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop spbrf1 = new Shop("Spring Bright Set1(F)", 93,
-							new JLabel(new ImageIcon("image/product/fcart/f∫Ω∫Í1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÎ¥ÑÎ∏å1.png")));
 					MyShop.pCount++;
 					MyShop.add(spbrf1);
 				}
@@ -109,7 +109,7 @@ public class FrameProductSpringF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop spbrf2 = new Shop("Spring Bright Set2(F)", 134,
-							new JLabel(new ImageIcon("image/product/fcart/f∫Ω∫Í2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÎ¥ÑÎ∏å2.png")));
 					MyShop.pCount++;
 					MyShop.add(spbrf2);
 				}
@@ -118,13 +118,13 @@ public class FrameProductSpringF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop spbrf3 = new Shop("Spring Bright Set3(F)", 108,
-							new JLabel(new ImageIcon("image/product/fcart/f∫Ω∫Í3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÎ¥ÑÎ∏å3.png")));
 					MyShop.pCount++;
 					MyShop.add(spbrf3);
 				}
 			});
 
-			// backπˆ∆∞
+			// backÎ≤ÑÌäº
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -135,10 +135,10 @@ public class FrameProductSpringF extends JFrame {
 					frame.dispose();
 				}
 			});
-			// mainπˆ∆∞
+			// mainÎ≤ÑÌäº
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// πË∞Ê»ø∞˙ √≥∏Æ
+			// Î∞∞Í≤ΩÌö®Í≥º Ï≤òÎ¶¨
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 
@@ -150,13 +150,13 @@ public class FrameProductSpringF extends JFrame {
 		public ProSpWmF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ∑Œ∞ÌµÈ
+			// Î°úÍ≥†Îì§
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// ªÛ¥‹ ≈∏¿Ã∆≤
-			ImageIcon spwm = new ImageIcon("image/product/∫Ωø˙.png");
+			// ÏÉÅÎã® ÌÉÄÏù¥ÌãÄ
+			ImageIcon spwm = new ImageIcon("image/product/Î¥ÑÏõú.png");
 			JLabel spWarm = new JLabel(spwm);
 			spWarm.setBounds(115, 70, 350, 110);
 			frame.add(spWarm);
@@ -177,11 +177,11 @@ public class FrameProductSpringF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/f∫Ωø˙1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fÎ¥ÑÏõú1.png");
 					JLabel wmSet1 = new JLabel(set1);
 					wmSet1.setBounds(25, 25, 485, 485);
 					newF.add(wmSet1);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/79.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -195,11 +195,11 @@ public class FrameProductSpringF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/f∫Ωø˙2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fÎ¥ÑÏõú2.png");
 					JLabel wmSet2 = new JLabel(set2);
 					wmSet2.setBounds(25, 25, 485, 485);
 					newF.add(wmSet2);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/116.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -213,11 +213,11 @@ public class FrameProductSpringF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/f∫Ωø˙3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fÎ¥ÑÏõú3.png");
 					JLabel wmSet3 = new JLabel(set3);
 					wmSet3.setBounds(25, 25, 485, 485);
 					newF.add(wmSet3);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/97.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -229,7 +229,7 @@ public class FrameProductSpringF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop spwmf1 = new Shop("Spring Warm Set1(F)", 79,
-							new JLabel(new ImageIcon("image/product/fcart/f∫Ωø˙1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÎ¥ÑÏõú1.png")));
 					MyShop.pCount++;
 					MyShop.add(spwmf1);
 				}
@@ -238,7 +238,7 @@ public class FrameProductSpringF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop spwmf2 = new Shop("Spring Warm Set2(F)", 116,
-							new JLabel(new ImageIcon("image/product/fcart/f∫Ωø˙2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÎ¥ÑÏõú2.png")));
 					MyShop.pCount++;
 					MyShop.add(spwmf2);
 				}
@@ -247,13 +247,13 @@ public class FrameProductSpringF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop spwmf3 = new Shop("Spring Warm Set3(F)", 97,
-							new JLabel(new ImageIcon("image/product/fcart/f∫Ωø˙3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÎ¥ÑÏõú3.png")));
 					MyShop.pCount++;
 					MyShop.add(spwmf3);
 				}
 			});
 
-			// backπˆ∆∞
+			// backÎ≤ÑÌäº
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -264,10 +264,10 @@ public class FrameProductSpringF extends JFrame {
 					frame.dispose();
 				}
 			});
-			// mainπˆ∆∞
+			// mainÎ≤ÑÌäº
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// πË∞Ê»ø∞˙ √≥∏Æ
+			// Î∞∞Í≤ΩÌö®Í≥º Ï≤òÎ¶¨
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 
@@ -279,13 +279,13 @@ public class FrameProductSpringF extends JFrame {
 		public ProSpLtF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ∑Œ∞ÌµÈ
+			// Î°úÍ≥†Îì§
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// ªÛ¥‹ ≈∏¿Ã∆≤
-			ImageIcon splt = new ImageIcon("image/product/∫Ω∂Û.png");
+			// ÏÉÅÎã® ÌÉÄÏù¥ÌãÄ
+			ImageIcon splt = new ImageIcon("image/product/Î¥ÑÎùº.png");
 			JLabel spLight = new JLabel(splt);
 			spLight.setBounds(115, 70, 350, 110);
 			frame.add(spLight);
@@ -306,11 +306,11 @@ public class FrameProductSpringF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/f∫Ω∂Û1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fÎ¥ÑÎùº1.png");
 					JLabel ltSet1 = new JLabel(set1);
 					ltSet1.setBounds(25, 25, 485, 485);
 					newF.add(ltSet1);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/86.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -324,11 +324,11 @@ public class FrameProductSpringF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/f∫Ω∂Û2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fÎ¥ÑÎùº2.png");
 					JLabel ltSet2 = new JLabel(set2);
 					ltSet2.setBounds(25, 25, 485, 485);
 					newF.add(ltSet2);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/125.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -342,11 +342,11 @@ public class FrameProductSpringF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/f∫Ω∂Û3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fÎ¥ÑÎùº3.png");
 					JLabel ltSet3 = new JLabel(set3);
 					ltSet3.setBounds(25, 25, 485, 485);
 					newF.add(ltSet3);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/134.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -358,7 +358,7 @@ public class FrameProductSpringF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop spltf1 = new Shop("Spring Light Set1(F)", 86,
-							new JLabel(new ImageIcon("image/product/fcart/f∫Ω∂Û1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÎ¥ÑÎùº1.png")));
 					MyShop.pCount++;
 					MyShop.add(spltf1);
 				}
@@ -367,7 +367,7 @@ public class FrameProductSpringF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop spltf2 = new Shop("Spring Light Set2(F)", 125,
-							new JLabel(new ImageIcon("image/product/fcart/f∫Ω∂Û2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÎ¥ÑÎùº2.png")));
 					MyShop.pCount++;
 					MyShop.add(spltf2);
 				}
@@ -376,13 +376,13 @@ public class FrameProductSpringF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop spltf3 = new Shop("Spring Light Set3(F)", 134,
-							new JLabel(new ImageIcon("image/product/fcart/f∫Ω∂Û3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÎ¥ÑÎùº3.png")));
 					MyShop.pCount++;
 					MyShop.add(spltf3);
 				}
 			});
 
-			// backπˆ∆∞
+			// backÎ≤ÑÌäº
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -393,10 +393,10 @@ public class FrameProductSpringF extends JFrame {
 					frame.dispose();
 				}
 			});
-			// mainπˆ∆∞
+			// mainÎ≤ÑÌäº
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// πË∞Ê»ø∞˙ √≥∏Æ
+			// Î∞∞Í≤ΩÌö®Í≥º Ï≤òÎ¶¨
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 

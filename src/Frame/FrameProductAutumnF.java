@@ -24,13 +24,13 @@ public class FrameProductAutumnF {
 		public ProAuMtF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ·Î°íµé
+			// ë¡œê³ ë“¤
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// »ó´Ü Å¸ÀÌÆ²
-			ImageIcon aumt = new ImageIcon("image/product/°¥¹Â.png");
+			// ìƒë‹¨ íƒ€ì´í‹€
+			ImageIcon aumt = new ImageIcon("image/product/ê°ˆë®¤.png");
 			JLabel auMute = new JLabel(aumt);
 			auMute.setBounds(115, 70, 350, 110);
 			frame.add(auMute);
@@ -51,11 +51,11 @@ public class FrameProductAutumnF {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/f°¥¹Â1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fê°ˆë®¤1.png");
 					JLabel mtSet1 = new JLabel(set1);
 					mtSet1.setBounds(25, 25, 485, 485);
 					newF.add(mtSet1);
-					// °¡°İ ÀÌ¹ÌÁö
+					// ê°€ê²© ì´ë¯¸ì§€
 					ImageIcon price = new ImageIcon("image/product/price/125.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -69,11 +69,11 @@ public class FrameProductAutumnF {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/f°¥¹Â2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fê°ˆë®¤2.png");
 					JLabel brSet2 = new JLabel(set2);
 					brSet2.setBounds(25, 25, 485, 485);
 					newF.add(brSet2);
-					// °¡°İ ÀÌ¹ÌÁö
+					// ê°€ê²© ì´ë¯¸ì§€
 					ImageIcon price = new ImageIcon("image/product/price/116.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -87,11 +87,11 @@ public class FrameProductAutumnF {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/f°¥¹Â3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fê°ˆë®¤3.png");
 					JLabel brSet3 = new JLabel(set3);
 					brSet3.setBounds(25, 25, 485, 485);
 					newF.add(brSet3);
-					// °¡°İ ÀÌ¹ÌÁö
+					// ê°€ê²© ì´ë¯¸ì§€
 					ImageIcon price = new ImageIcon("image/product/price/108.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -103,7 +103,7 @@ public class FrameProductAutumnF {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop aumtf1 = new Shop("Autumn Mute Set1(F)", 125,
-							new JLabel(new ImageIcon("image/product/fcart/f°¥¹Â1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fê°ˆë®¤1.png")));
 					MyShop.pCount++;
 					MyShop.add(aumtf1);
 				}
@@ -112,7 +112,7 @@ public class FrameProductAutumnF {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop aumtf2 = new Shop("Autumn Mute Set2(F)", 116,
-							new JLabel(new ImageIcon("image/product/fcart/f°¥¹Â2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fê°ˆë®¤2.png")));
 					MyShop.pCount++;
 					MyShop.add(aumtf2);
 				}
@@ -121,13 +121,13 @@ public class FrameProductAutumnF {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop aumtf3 = new Shop("Autumn Mute Set3(F)", 108,
-							new JLabel(new ImageIcon("image/product/fcart/f°¥¹Â3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fê°ˆë®¤3.png")));
 					MyShop.pCount++;
 					MyShop.add(aumtf3);
 				}
 			});
 
-			// back¹öÆ°
+			// backë²„íŠ¼
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -138,10 +138,10 @@ public class FrameProductAutumnF {
 					frame.dispose();
 				}
 			});
-			// main¹öÆ°
+			// mainë²„íŠ¼
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// ¹è°æÈ¿°ú Ã³¸®
+			// ë°°ê²½íš¨ê³¼ ì²˜ë¦¬
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 
@@ -153,13 +153,13 @@ public class FrameProductAutumnF {
 		public ProAuWmF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ·Î°íµé
+			// ë¡œê³ ë“¤
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// »ó´Ü Å¸ÀÌÆ²
-			ImageIcon auwm = new ImageIcon("image/product/°¥¿ú.png");
+			// ìƒë‹¨ íƒ€ì´í‹€
+			ImageIcon auwm = new ImageIcon("image/product/ê°ˆì›œ.png");
 			JLabel auWarm = new JLabel(auwm);
 			auWarm.setBounds(115, 70, 350, 110);
 			frame.add(auWarm);
@@ -180,11 +180,11 @@ public class FrameProductAutumnF {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/f°¥¿ú1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fê°ˆì›œ1.png");
 					JLabel wmSet1 = new JLabel(set1);
 					wmSet1.setBounds(25, 25, 485, 485);
 					newF.add(wmSet1);
-					// °¡°İ ÀÌ¹ÌÁö
+					// ê°€ê²© ì´ë¯¸ì§€
 					ImageIcon price = new ImageIcon("image/product/price/108.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -198,11 +198,11 @@ public class FrameProductAutumnF {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/f°¥¿ú2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fê°ˆì›œ2.png");
 					JLabel wmSet2 = new JLabel(set2);
 					wmSet2.setBounds(25, 25, 485, 485);
 					newF.add(wmSet2);
-					// °¡°İ ÀÌ¹ÌÁö
+					// ê°€ê²© ì´ë¯¸ì§€
 					ImageIcon price = new ImageIcon("image/product/price/86.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -216,11 +216,11 @@ public class FrameProductAutumnF {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/f°¥¿ú3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fê°ˆì›œ3.png");
 					JLabel wmSet3 = new JLabel(set3);
 					wmSet3.setBounds(25, 25, 485, 485);
 					newF.add(wmSet3);
-					// °¡°İ ÀÌ¹ÌÁö
+					// ê°€ê²© ì´ë¯¸ì§€
 					ImageIcon price = new ImageIcon("image/product/price/93.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -232,7 +232,7 @@ public class FrameProductAutumnF {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop auwmf1 = new Shop("Autumn Warm Set1(F)", 108,
-							new JLabel(new ImageIcon("image/product/fcart/f°¥¿ú1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fê°ˆì›œ1.png")));
 					MyShop.pCount++;
 					MyShop.add(auwmf1);
 				}
@@ -241,7 +241,7 @@ public class FrameProductAutumnF {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop auwmf2 = new Shop("Autumn Warm Set2(F)", 86,
-							new JLabel(new ImageIcon("image/product/fcart/f°¥¿ú2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fê°ˆì›œ2.png")));
 					MyShop.pCount++;
 					MyShop.add(auwmf2);
 				}
@@ -250,13 +250,13 @@ public class FrameProductAutumnF {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop auwmf3 = new Shop("Autumn Warm Set3(F)", 93,
-							new JLabel(new ImageIcon("image/product/fcart/f°¥¿ú3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fê°ˆì›œ3.png")));
 					MyShop.pCount++;
 					MyShop.add(auwmf3);
 				}
 			});
 
-			// back¹öÆ°
+			// backë²„íŠ¼
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -267,10 +267,10 @@ public class FrameProductAutumnF {
 					frame.dispose();
 				}
 			});
-			// main¹öÆ°
+			// mainë²„íŠ¼
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// ¹è°æÈ¿°ú Ã³¸®
+			// ë°°ê²½íš¨ê³¼ ì²˜ë¦¬
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 
@@ -282,13 +282,13 @@ public class FrameProductAutumnF {
 		public ProAuDpF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ·Î°íµé
+			// ë¡œê³ ë“¤
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// »ó´Ü Å¸ÀÌÆ²
-			ImageIcon AuDp = new ImageIcon("image/product/°¥µö.png");
+			// ìƒë‹¨ íƒ€ì´í‹€
+			ImageIcon AuDp = new ImageIcon("image/product/ê°ˆë”¥.png");
 			JLabel auDeep = new JLabel(AuDp);
 			auDeep.setBounds(115, 70, 350, 110);
 			frame.add(auDeep);
@@ -309,11 +309,11 @@ public class FrameProductAutumnF {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/f°¥µö1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fê°ˆë”¥1.png");
 					JLabel DpSet1 = new JLabel(set1);
 					DpSet1.setBounds(25, 25, 485, 485);
 					newF.add(DpSet1);
-					// °¡°İ ÀÌ¹ÌÁö
+					// ê°€ê²© ì´ë¯¸ì§€
 					ImageIcon price = new ImageIcon("image/product/price/147.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -327,11 +327,11 @@ public class FrameProductAutumnF {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/f°¥µö2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fê°ˆë”¥2.png");
 					JLabel ltSet2 = new JLabel(set2);
 					ltSet2.setBounds(25, 25, 485, 485);
 					newF.add(ltSet2);
-					// °¡°İ ÀÌ¹ÌÁö
+					// ê°€ê²© ì´ë¯¸ì§€
 					ImageIcon price = new ImageIcon("image/product/price/152.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -345,11 +345,11 @@ public class FrameProductAutumnF {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/f°¥µö3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fê°ˆë”¥3.png");
 					JLabel ltSet3 = new JLabel(set3);
 					ltSet3.setBounds(25, 25, 485, 485);
 					newF.add(ltSet3);
-					// °¡°İ ÀÌ¹ÌÁö
+					// ê°€ê²© ì´ë¯¸ì§€
 					ImageIcon price = new ImageIcon("image/product/price/134.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -361,7 +361,7 @@ public class FrameProductAutumnF {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop audpf1 = new Shop("Autumn Deep Set1(F)", 147,
-							new JLabel(new ImageIcon("image/product/fcart/f°¥µö1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fê°ˆë”¥1.png")));
 					MyShop.pCount++;
 					MyShop.add(audpf1);
 				}
@@ -370,7 +370,7 @@ public class FrameProductAutumnF {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop auwmf2 = new Shop("Autumn Deep Set2(F)", 152,
-							new JLabel(new ImageIcon("image/product/fcart/f°¥µö2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fê°ˆë”¥2.png")));
 					MyShop.pCount++;
 					MyShop.add(auwmf2);
 				}
@@ -379,13 +379,13 @@ public class FrameProductAutumnF {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop auwmf3 = new Shop("Autumn Deep Set3(F)", 134,
-							new JLabel(new ImageIcon("image/product/fcart/f°¥µö3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fê°ˆë”¥3.png")));
 					MyShop.pCount++;
 					MyShop.add(auwmf3);
 				}
 			});
 
-			// back¹öÆ°
+			// backë²„íŠ¼
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -396,10 +396,10 @@ public class FrameProductAutumnF {
 					frame.dispose();
 				}
 			});
-			// main¹öÆ°
+			// mainë²„íŠ¼
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// ¹è°æÈ¿°ú Ã³¸®
+			// ë°°ê²½íš¨ê³¼ ì²˜ë¦¬
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 

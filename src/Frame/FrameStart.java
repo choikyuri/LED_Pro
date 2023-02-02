@@ -16,19 +16,19 @@ import Set.MyShop;
 public class FrameStart extends JFrame {
 
 	public FrameStart() {
-		// BaseSet °´Ã¼ »ı¼º
+		// BaseSet ê°ì²´ ìƒì„±
 		BaseSet frame = new BaseSet();
 
-		// ¿Ê·Î°í ÀÌ¹ÌÁö
-		ImageIcon imageLogo = new ImageIcon("image/frame/¿Ê.png");
+		// ì˜·ë¡œê³  ì´ë¯¸ì§€
+		ImageIcon imageLogo = new ImageIcon("image/frame/ì˜·.png");
 		JLabel lblImage = new JLabel(imageLogo);
 		lblImage.setSize(350, 350);
 		lblImage.setLocation(125, 50);
 		frame.add(lblImage);
 
-		// Á¦¸ñ ÀÌ¹ÌÁö & Á¤º¸Ã¢
-		ImageIcon title = new ImageIcon("image/frame/Á¦¸ñ.png");
-		ImageIcon titleon = new ImageIcon("image/frame/Á¦¸ñon.png");
+		// ì œëª© ì´ë¯¸ì§€ & ì •ë³´ì°½
+		ImageIcon title = new ImageIcon("image/frame/ì œëª©.png");
+		ImageIcon titleon = new ImageIcon("image/frame/ì œëª©on.png");
 		JButton titlePCSR = new JButton();
 		frame.ButtonSet(titlePCSR, title, titleon);
 		titlePCSR.setBounds(30, 500, 400, 200);
@@ -42,7 +42,7 @@ public class FrameStart extends JFrame {
 				InfoPc.setTitle("PersonalColor Information");
 				InfoPc.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
 						((int) tk.getScreenSize().getHeight()) / 2 - 275, 550, 550);
-				ImageIcon pc = new ImageIcon("image/info/ÆÛÄÃ¼³¸í.png");
+				ImageIcon pc = new ImageIcon("image/info/í¼ì»¬ì„¤ëª….png");
 				JLabel pcinfo = new JLabel(pc);
 				pcinfo.setBounds(0, 0, 550, 550);
 				InfoPc.add(pcinfo);
@@ -50,23 +50,23 @@ public class FrameStart extends JFrame {
 			}
 		});
 
-		// ¶óÀÎ ÀÌ¹ÌÁö
+		// ë¼ì¸ ì´ë¯¸ì§€
 		ImageIcon line = new ImageIcon("image/frame/line.png");
 		JLabel lblLine = new JLabel(line);
 		lblLine.setSize(600, 1);
 		lblLine.setLocation(0, 480);
 		frame.add(lblLine);
 
-		// ÆÀ ·Î°í ÀÌ¹ÌÁö
-		ImageIcon tName = new ImageIcon("image/frame/ÆÀ¸í.png");
-		ImageIcon tNameon = new ImageIcon("image/frame/ÆÀ¸íon.png");
+		// íŒ€ ë¡œê³  ì´ë¯¸ì§€
+		ImageIcon tName = new ImageIcon("image/frame/íŒ€ëª….png");
+		ImageIcon tNameon = new ImageIcon("image/frame/íŒ€ëª…on.png");
 		JButton teamName = new JButton();
 		frame.ButtonSet(teamName, tName, tNameon);
 		teamName.setSize(90, 240);
 		teamName.setLocation(470, 480);
 		frame.add(teamName);
 
-		// »ó´ÜÀÇ chat¹öÆ° ¼³Á¤
+		// ìƒë‹¨ì˜ chatë²„íŠ¼ ì„¤ì •
 		ImageIcon chat = new ImageIcon("image/frame/chat.png");
 		ImageIcon chaton = new ImageIcon("image/frame/chaton.png");
 		JButton btnChat = new JButton();
@@ -82,7 +82,7 @@ public class FrameStart extends JFrame {
 			}
 		});
 
-		// »ó´ÜÀÇ cart¹öÆ° ¼³Á¤
+		// ìƒë‹¨ì˜ cartë²„íŠ¼ ì„¤ì •
 		ImageIcon cart = new ImageIcon("image/frame/cart.png");
 		ImageIcon carton = new ImageIcon("image/frame/carton.png");
 		JButton btnCart = new JButton();
@@ -96,7 +96,7 @@ public class FrameStart extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				if (MyShop.buylist.isEmpty()) {
-					JOptionPane.showMessageDialog(null, "Àå¹Ù±¸´Ï°¡ ºñ¾îÀÖ½À´Ï´Ù.");
+					JOptionPane.showMessageDialog(null, "ì¥ë°”êµ¬ë‹ˆê°€ ë¹„ì–´ìˆìŠµë‹ˆë‹¤.");
 				} else {
 					new FrameCart();
 					frame.dispose();
@@ -104,7 +104,7 @@ public class FrameStart extends JFrame {
 			}
 		});
 
-		// ÇÏ´ÜÀÇ start¹öÆ° ¼³Á¤
+		// í•˜ë‹¨ì˜ startë²„íŠ¼ ì„¤ì •
 		ImageIcon start = new ImageIcon("image/frame/start.png");
 		ImageIcon starton = new ImageIcon("image/frame/starton.png");
 		JButton btnStart = new JButton();
@@ -121,7 +121,7 @@ public class FrameStart extends JFrame {
 			}
 		});
 
-		// ¹è°æÈ¿°ú Ã³¸®
+		// ë°°ê²½íš¨ê³¼ ì²˜ë¦¬
 		JLabel effect = new JLabel();
 		frame.backEffect(effect);
 

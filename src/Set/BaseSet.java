@@ -24,44 +24,44 @@ public class BaseSet extends JFrame {
 
 	public BaseSet() {
 
-		// ÇØ»óµµ
+		// í•´ìƒë„
 		Toolkit tk = Toolkit.getDefaultToolkit();
 
-		// ±âº» JFrame È¯°æ¼³Á¤
-		setTitle("PCSR");// ¸ÇÀ§¿¡
-		setLayout(null);// ÀÚµ¿¹èÄ¡
+		// ê¸°ë³¸ JFrame í™˜ê²½ì„¤ì •
+		setTitle("PCSR");
+		setLayout(null);// ìë™ë°°ì¹˜
 		setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 300, ((int) tk.getScreenSize().getHeight()) / 2 - 450,
-				600, 900); // ½ÇÁ¦ »çÀÌÁî
+				600, 900); // ì‹¤ì œ ì‚¬ì´ì¦ˆ
 
 		getContentPane().setBackground(new Color(226, 224, 222));
 
-	}// »ı¼ºÀÚ
+	}// ìƒì„±ì
 
 	public void backEffect(JLabel effect) {
-		ImageIcon backEffect = new ImageIcon("image/frame/¹è°æÈ¿°ú.png"); // µÚ¿¡ È¸»ö
+		ImageIcon backEffect = new ImageIcon("image/frame/ë°°ê²½íš¨ê³¼.png"); 
 		effect = new JLabel(backEffect);
 		effect.setBounds(0, 0, 600, 900);
 		add(effect);
 	}
 
 	public void logoSet(JLabel lblImage, JButton lblLED, JButton lblTitle) {
-		// ¿Ê·Î°í
-		ImageIcon imageLogo = new ImageIcon("image/frame/·Î°í¿Ê.png");
+		// ì˜·ë¡œê³ 
+		ImageIcon imageLogo = new ImageIcon("image/frame/ë¡œê³ ì˜·.png");
 		lblImage = new JLabel(imageLogo);
 		lblImage.setBounds(30, 20, 70, 70);
 		add(lblImage);
 
-		// ÆÀ·Î°í
-		ImageIcon teamLogo = new ImageIcon("image/frame/ÆÀ·Î°í.png");
-		ImageIcon teamLogoon = new ImageIcon("image/frame/ÆÀ·Î°íon.png");
+		// íŒ€ë¡œê³ 
+		ImageIcon teamLogo = new ImageIcon("image/frame/íŒ€ë¡œê³ .png");
+		ImageIcon teamLogoon = new ImageIcon("image/frame/íŒ€ë¡œê³ on.png");
 		lblLED = new JButton();
 		ButtonSet(lblLED, teamLogo, teamLogoon);
 		lblLED.setBounds(480, 20, 70, 80);
 		add(lblLED);
 
-		// Å¸ÀÌÆ²·Î°í
-		ImageIcon titleLogo = new ImageIcon("image/frame/Å¸ÀÌÆ²·Î°í.png");
-		ImageIcon titleLogoon = new ImageIcon("image/frame/Å¸ÀÌÆ²·Î°íon.png");
+		// íƒ€ì´í‹€ë¡œê³ 
+		ImageIcon titleLogo = new ImageIcon("image/frame/íƒ€ì´í‹€ë¡œê³ .png");
+		ImageIcon titleLogoon = new ImageIcon("image/frame/íƒ€ì´í‹€ë¡œê³ on.png");
 		lblTitle = new JButton();
 		ButtonSet(lblTitle, titleLogo, titleLogoon);
 		lblTitle.setBounds(220, 780, 140, 60);
@@ -74,8 +74,8 @@ public class BaseSet extends JFrame {
 		btn.setFocusPainted(false);
 		btn.setBorder(null);
 		btn.setIcon(stateIcon);
-		btn.setRolloverIcon(overIcon); // ¸¶¿ì½º°¡Á®°¬À»¶§
-		btn.setPressedIcon(overIcon); // Å¬¸¯ÇßÀ»¶§
+		btn.setRolloverIcon(overIcon); 
+		btn.setPressedIcon(overIcon); 
 	}
 
 	public void goMain(JButton btnMain) {
@@ -88,7 +88,7 @@ public class BaseSet extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new FrameStart(); // FrameStart ¿©±â·Î °¡¶ó
+				new FrameStart(); 
 				dispose();
 			}
 		});
@@ -99,7 +99,7 @@ public class BaseSet extends JFrame {
 		ImageIcon backon = new ImageIcon("image/frame/backon.png");
 		ButtonSet(btnBack, back, backon);
 		btnBack.setBounds(30, 740, 120, 60);
-		add(btnBack); // ³»¿ëÀ» ¸¸µé¾î ³õÀº °¡¹æÀ¸·Î ³ÖÀ½
+		add(btnBack); 
 	}
 
 	public void backSp(JButton btnBack) {

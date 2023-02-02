@@ -14,24 +14,24 @@ import Set.BaseSet;
 public class FrameSeason extends JFrame {
 
    public FrameSeason() {
-      // BaseSet ∞¥√º ª˝º∫
+      // BaseSet Í∞ùÏ≤¥ ÏÉùÏÑ±
       BaseSet frame = new BaseSet();
 
-      // ∞Ë¿˝ ¿ÃπÃ¡ˆ
+      // Í≥ÑÏ†à Ïù¥ÎØ∏ÏßÄ
       ImageIcon season = new ImageIcon("image/frame/season.png");
       JLabel lblSeason = new JLabel(season);
       lblSeason.setBounds(115, 70, 350, 85);
       frame.add(lblSeason);
 
-      // ø ∑Œ∞Ì ∆¿∑Œ∞Ì ≈∏¿Ã∆≤∑Œ∞Ì
+      // Ïò∑Î°úÍ≥† ÌåÄÎ°úÍ≥† ÌÉÄÏù¥ÌãÄÎ°úÍ≥†
       JLabel lblImage = new JLabel();
       JButton lblLED = new JButton();
       JButton lblTitle = new JButton();
       frame.logoSet(lblImage, lblLED, lblTitle);
 
-      // ∫Ω¡§∫∏ πˆ∆∞
-      ImageIcon info = new ImageIcon("image/info/¡§∫∏.png");
-      ImageIcon infoon = new ImageIcon("image/info/¡§∫∏on.png");
+      // Î¥ÑÏ†ïÎ≥¥ Î≤ÑÌäº
+      ImageIcon info = new ImageIcon("image/info/Ï†ïÎ≥¥.png");
+      ImageIcon infoon = new ImageIcon("image/info/Ï†ïÎ≥¥on.png");
       JButton btnSpInfo = new JButton();
       frame.ButtonSet(btnSpInfo, info, infoon);
       
@@ -47,7 +47,7 @@ public class FrameSeason extends JFrame {
             InfoSp.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon sp = new ImageIcon("image/info/∫Ωº≥∏Ì.png");
+            ImageIcon sp = new ImageIcon("image/info/Î¥ÑÏÑ§Î™Ö.png");
             JLabel spinfo = new JLabel(sp);
             spinfo.setBounds(0, 0, 550, 550);
             InfoSp.add(spinfo);
@@ -55,9 +55,9 @@ public class FrameSeason extends JFrame {
          }
       });
 
-      // ∫Ω πˆ∆∞
-      ImageIcon spring = new ImageIcon("image/frame/∫Ω.png");
-      ImageIcon springon = new ImageIcon("image/frame/∫Ωon.png");
+      // Î¥Ñ Î≤ÑÌäº
+      ImageIcon spring = new ImageIcon("image/frame/Î¥Ñ.png");
+      ImageIcon springon = new ImageIcon("image/frame/Î¥Ñon.png");
       JButton btnSpring = new JButton();
       frame.ButtonSet(btnSpring, spring, springon);
       btnSpring.setBounds(40, 190, 236, 236);
@@ -71,7 +71,7 @@ public class FrameSeason extends JFrame {
          }
       });
 
-      // ø©∏ß¡§∫∏ πˆ∆∞
+      // Ïó¨Î¶ÑÏ†ïÎ≥¥ Î≤ÑÌäº
       JButton btnSuInfo = new JButton();
       frame.ButtonSet(btnSuInfo, info, infoon);
       
@@ -87,7 +87,7 @@ public class FrameSeason extends JFrame {
             InfoSu.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon su = new ImageIcon("image/info/ø©∏ßº≥∏Ì.png");
+            ImageIcon su = new ImageIcon("image/info/Ïó¨Î¶ÑÏÑ§Î™Ö.png");
             JLabel suinfo = new JLabel(su);
             suinfo.setBounds(0, 0, 550, 550);
             InfoSu.add(suinfo);
@@ -95,9 +95,9 @@ public class FrameSeason extends JFrame {
          }
       });
       
-      // ø©∏ß πˆ∆∞
-      ImageIcon summer = new ImageIcon("image/frame/ø©∏ß.png");
-      ImageIcon summeron = new ImageIcon("image/frame/ø©∏ßon.png");
+      // Ïó¨Î¶Ñ Î≤ÑÌäº
+      ImageIcon summer = new ImageIcon("image/frame/Ïó¨Î¶Ñ.png");
+      ImageIcon summeron = new ImageIcon("image/frame/Ïó¨Î¶Ñon.png");
       JButton btnSummer = new JButton();
       frame.ButtonSet(btnSummer, summer, summeron);
 
@@ -112,7 +112,7 @@ public class FrameSeason extends JFrame {
          }
       });
 
-      // ∞°¿ª¡§∫∏ πˆ∆∞
+      // Í∞ÄÏùÑÏ†ïÎ≥¥ Î≤ÑÌäº
       JButton btnAuInfo = new JButton();
       frame.ButtonSet(btnAuInfo, info, infoon);
       
@@ -128,7 +128,7 @@ public class FrameSeason extends JFrame {
             InfoAu.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon au = new ImageIcon("image/info/∞°¿ªº≥∏Ì.png");
+            ImageIcon au = new ImageIcon("image/info/Í∞ÄÏùÑÏÑ§Î™Ö.png");
             JLabel auinfo = new JLabel(au);
             auinfo.setBounds(0, 0, 550, 550);
             InfoAu.add(auinfo);
@@ -136,9 +136,9 @@ public class FrameSeason extends JFrame {
          }
       });
       
-      // ∞°¿ª πˆ∆∞
-      ImageIcon autumn = new ImageIcon("image/frame/∞°¿ª.png");
-      ImageIcon autumnon = new ImageIcon("image/frame/∞°¿ªon.png");
+      // Í∞ÄÏùÑ Î≤ÑÌäº
+      ImageIcon autumn = new ImageIcon("image/frame/Í∞ÄÏùÑ.png");
+      ImageIcon autumnon = new ImageIcon("image/frame/Í∞ÄÏùÑon.png");
       JButton btnAutumn = new JButton();
       frame.ButtonSet(btnAutumn, autumn, autumnon);
 
@@ -153,7 +153,7 @@ public class FrameSeason extends JFrame {
          }
       });
 
-      // ∞‹øÔ¡§∫∏ πˆ∆∞
+      // Í≤®Ïö∏Ï†ïÎ≥¥ Î≤ÑÌäº
       JButton btnWiInfo = new JButton();
       frame.ButtonSet(btnWiInfo, info, infoon);
       
@@ -169,7 +169,7 @@ public class FrameSeason extends JFrame {
             InfoWi.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon wi = new ImageIcon("image/info/∞‹øÔº≥∏Ì.png");
+            ImageIcon wi = new ImageIcon("image/info/Í≤®Ïö∏ÏÑ§Î™Ö.png");
             JLabel wiinfo = new JLabel(wi);
             wiinfo.setBounds(0, 0, 550, 550);
             InfoWi.add(wiinfo);
@@ -177,9 +177,9 @@ public class FrameSeason extends JFrame {
          }
       });
       
-      // ∞‹øÔ πˆ∆∞
-      ImageIcon winter = new ImageIcon("image/frame/∞‹øÔ.png");
-      ImageIcon winteron = new ImageIcon("image/frame/∞‹øÔon.png");
+      // Í≤®Ïö∏ Î≤ÑÌäº
+      ImageIcon winter = new ImageIcon("image/frame/Í≤®Ïö∏.png");
+      ImageIcon winteron = new ImageIcon("image/frame/Í≤®Ïö∏on.png");
       JButton btnWinter = new JButton();
       frame.ButtonSet(btnWinter, winter, winteron);
 
@@ -194,7 +194,7 @@ public class FrameSeason extends JFrame {
          }
       });
 
-      // backπˆ∆∞
+      // backÎ≤ÑÌäº
       JButton btnBack = new JButton();
       frame.goBack(btnBack);
 
@@ -206,11 +206,11 @@ public class FrameSeason extends JFrame {
          }
       });
 
-      // mainπˆ∆∞
+      // mainÎ≤ÑÌäº
       JButton btnMain = new JButton();
       frame.goMain(btnMain);
 
-      // πË∞Ê»ø∞˙ √≥∏Æ
+      // Î∞∞Í≤ΩÌö®Í≥º Ï≤òÎ¶¨
       JLabel effect = new JLabel();
       frame.backEffect(effect);
 

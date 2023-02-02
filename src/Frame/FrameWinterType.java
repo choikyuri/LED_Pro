@@ -17,11 +17,11 @@ import Set.BaseSet;
 public class FrameWinterType extends JFrame{
    public FrameWinterType() {
       
-      // BaseSet °´Ã¼ »ı¼º
+      // BaseSet ê°ì²´ ìƒì„±
       BaseSet frame = new BaseSet();
       
-      // °Ü¿ïÅ¸ÀÔ ÀÌ¹ÌÁö
-      ImageIcon winter = new ImageIcon("image/frame/°Ü¿ïÅ¸ÀÔ.png");
+      // ê²¨ìš¸íƒ€ì… ì´ë¯¸ì§€
+      ImageIcon winter = new ImageIcon("image/frame/ê²¨ìš¸íƒ€ì….png");
       JLabel lblWinter = new JLabel(winter);
       lblWinter.setBounds(115,70,350,110);
       frame.add(lblWinter);
@@ -31,9 +31,9 @@ public class FrameWinterType extends JFrame{
       JButton lblTitle = new JButton();
       frame.logoSet(lblImage, lblLED, lblTitle);
       
-      // deep ÆÈ·¹Æ®Ã¢
-      ImageIcon info = new ImageIcon("image/info/ÆÈ·¹Æ®.png");
-      ImageIcon infoon = new ImageIcon("image/info/ÆÈ·¹Æ®on.png");
+      // deep íŒ”ë ˆíŠ¸ì°½
+      ImageIcon info = new ImageIcon("image/info/íŒ”ë ˆíŠ¸.png");
+      ImageIcon infoon = new ImageIcon("image/info/íŒ”ë ˆíŠ¸on.png");
       JButton WiDeepPlt = new JButton();
       frame.ButtonSet(WiDeepPlt, info, infoon);
       
@@ -49,7 +49,7 @@ public class FrameWinterType extends JFrame{
             widpPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon widp = new ImageIcon("image/info/°ÜµöÆÈ.png");
+            ImageIcon widp = new ImageIcon("image/info/ê²¨ë”¥íŒ”.png");
             JLabel dpwiplt = new JLabel(widp);
             dpwiplt.setBounds(0, 150, 550, 550);
             widpPlt.add(dpwiplt);
@@ -57,9 +57,9 @@ public class FrameWinterType extends JFrame{
          }
       });
 
-      // deep ¹öÆ°
-      ImageIcon deep = new ImageIcon("image/frame/µö.png");
-      ImageIcon deepon = new ImageIcon("image/frame/µöon.png");
+      // deep ë²„íŠ¼
+      ImageIcon deep = new ImageIcon("image/frame/ë”¥.png");
+      ImageIcon deepon = new ImageIcon("image/frame/ë”¥on.png");
       JButton btnDeep = new JButton();
       frame.ButtonSet(btnDeep, deep, deepon);
       btnDeep.setBounds(40, 240, 500, 120);
@@ -73,7 +73,7 @@ public class FrameWinterType extends JFrame{
          }
       });
       
-      // cool ÆÈ·¹Æ®Ã¢
+      // cool íŒ”ë ˆíŠ¸ì°½
       JButton WiCoolPlt = new JButton();
       frame.ButtonSet(WiCoolPlt, info, infoon);
       
@@ -89,7 +89,7 @@ public class FrameWinterType extends JFrame{
             wicoPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon wico = new ImageIcon("image/info/°ÜÄğÆÈ.png");
+            ImageIcon wico = new ImageIcon("image/info/ê²¨ì¿¨íŒ”.png");
             JLabel cowiplt = new JLabel(wico);
             cowiplt.setBounds(0, 150, 550, 550);
             wicoPlt.add(cowiplt);
@@ -97,9 +97,9 @@ public class FrameWinterType extends JFrame{
          }
       });
       
-      // cool ¹öÆ°
-      ImageIcon cool = new ImageIcon("image/frame/Äğ.png");
-      ImageIcon coolon = new ImageIcon("image/frame/Äğon.png");
+      // cool ë²„íŠ¼
+      ImageIcon cool = new ImageIcon("image/frame/ì¿¨.png");
+      ImageIcon coolon = new ImageIcon("image/frame/ì¿¨on.png");
       JButton btnCool = new JButton();
       frame.ButtonSet(btnCool, cool, coolon);
       btnCool.setBounds(40, 410, 500, 120);
@@ -113,7 +113,7 @@ public class FrameWinterType extends JFrame{
          }
       });
       
-      // bright ÆÈ·¹Æ®Ã¢
+      // bright íŒ”ë ˆíŠ¸ì°½
       JButton WiBrightPlt = new JButton();
       frame.ButtonSet(WiBrightPlt, info, infoon);
       
@@ -129,7 +129,7 @@ public class FrameWinterType extends JFrame{
             wibrPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon wibr = new ImageIcon("image/info/°ÜºêÆÈ.png");
+            ImageIcon wibr = new ImageIcon("image/info/ê²¨ë¸ŒíŒ”.png");
             JLabel brwiplt = new JLabel(wibr);
             brwiplt.setBounds(0, 150, 550, 550);
             wibrPlt.add(brwiplt);
@@ -137,9 +137,9 @@ public class FrameWinterType extends JFrame{
          }
       });
       
-      // bright ¹öÆ°
-      ImageIcon bright = new ImageIcon("image/frame/ºê¶óÀÌÆ®.png");
-      ImageIcon brighton = new ImageIcon("image/frame/ºê¶óÀÌÆ®on.png");
+      // bright ë²„íŠ¼
+      ImageIcon bright = new ImageIcon("image/frame/ë¸Œë¼ì´íŠ¸.png");
+      ImageIcon brighton = new ImageIcon("image/frame/ë¸Œë¼ì´íŠ¸on.png");
       JButton btnBright = new JButton();
       frame.ButtonSet(btnBright, bright, brighton);
 
@@ -154,7 +154,7 @@ public class FrameWinterType extends JFrame{
          }
       });
       
-      // back ¹öÆ°
+      // back ë²„íŠ¼
       JButton btnBack = new JButton();
       frame.goBack(btnBack);
 
@@ -166,15 +166,15 @@ public class FrameWinterType extends JFrame{
          }
       });
       
-      // main ¹öÆ°
+      // main ë²„íŠ¼
       JButton btnMain = new JButton();
       frame.goMain(btnMain);
       
-      // ¹è°æÈ¿°ú Ã³¸®
+      // ë°°ê²½íš¨ê³¼ ì²˜ë¦¬
       JLabel effect = new JLabel();
       frame.backEffect(effect);
       
-      // ¼¼ÆÃ
+      // ì„¸íŒ…
       frame.setVisible(true);
       
    }

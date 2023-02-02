@@ -17,11 +17,11 @@ import Set.BaseSet;
 public class FrameSpringType extends JFrame{
    public FrameSpringType() {
       
-      // BaseSet °´Ã¼ »ı¼º
+      // BaseSet ê°ì²´ ìƒì„±
       BaseSet frame = new BaseSet();
       
-      // º½Å¸ÀÔ ÀÌ¹ÌÁö
-      ImageIcon spring = new ImageIcon("image/frame/º½Å¸ÀÔ.png");
+      // ë´„íƒ€ì… ì´ë¯¸ì§€
+      ImageIcon spring = new ImageIcon("image/frame/ë´„íƒ€ì….png");
       JLabel lblSpring = new JLabel(spring);
       lblSpring.setBounds(115, 70, 350, 110);
       frame.add(lblSpring);
@@ -31,9 +31,9 @@ public class FrameSpringType extends JFrame{
       JButton lblTitle = new JButton();
       frame.logoSet(lblImage, lblLED, lblTitle);
       
-      // bright ÆÈ·¹Æ®Ã¢
-      ImageIcon info = new ImageIcon("image/info/ÆÈ·¹Æ®.png");
-      ImageIcon infoon = new ImageIcon("image/info/ÆÈ·¹Æ®on.png");
+      // bright íŒ”ë ˆíŠ¸ì°½
+      ImageIcon info = new ImageIcon("image/info/íŒ”ë ˆíŠ¸.png");
+      ImageIcon infoon = new ImageIcon("image/info/íŒ”ë ˆíŠ¸on.png");
       JButton spBrightPlt = new JButton();
       frame.ButtonSet(spBrightPlt, info, infoon);
       
@@ -49,7 +49,7 @@ public class FrameSpringType extends JFrame{
             spbrPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon spbr = new ImageIcon("image/info/º½ºêÆÈ.png");
+            ImageIcon spbr = new ImageIcon("image/info/ë´„ë¸ŒíŒ”.png");
             JLabel brspplt = new JLabel(spbr);
             brspplt.setBounds(0, 150, 550, 550);
             spbrPlt.add(brspplt);
@@ -57,9 +57,9 @@ public class FrameSpringType extends JFrame{
          }
       });
       
-      // bright ¹öÆ°
-      ImageIcon bright = new ImageIcon("image/frame/ºê¶óÀÌÆ®.png");
-      ImageIcon brighton = new ImageIcon("image/frame/ºê¶óÀÌÆ®on.png");
+      // bright ë²„íŠ¼
+      ImageIcon bright = new ImageIcon("image/frame/ë¸Œë¼ì´íŠ¸.png");
+      ImageIcon brighton = new ImageIcon("image/frame/ë¸Œë¼ì´íŠ¸on.png");
       JButton btnBright = new JButton();
       frame.ButtonSet(btnBright, bright, brighton);
 
@@ -74,7 +74,7 @@ public class FrameSpringType extends JFrame{
          }
       });
       
-      // warm ÆÈ·¹Æ®Ã¢
+      // warm íŒ”ë ˆíŠ¸ì°½
       JButton spWarmPlt = new JButton();
       frame.ButtonSet(spWarmPlt, info, infoon);
       
@@ -90,7 +90,7 @@ public class FrameSpringType extends JFrame{
             spwmPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon spwm = new ImageIcon("image/info/º½¿úÆÈ.png");
+            ImageIcon spwm = new ImageIcon("image/info/ë´„ì›œíŒ”.png");
             JLabel wmspplt = new JLabel(spwm);
             wmspplt.setBounds(0, 150, 550, 550);
             spwmPlt.add(wmspplt);
@@ -98,9 +98,9 @@ public class FrameSpringType extends JFrame{
          }
       });
       
-      // warm ¹öÆ°
-      ImageIcon warm = new ImageIcon("image/frame/¿ú.png");
-      ImageIcon warmon = new ImageIcon("image/frame/¿úon.png");
+      // warm ë²„íŠ¼
+      ImageIcon warm = new ImageIcon("image/frame/ì›œ.png");
+      ImageIcon warmon = new ImageIcon("image/frame/ì›œon.png");
       JButton btnWarm = new JButton();
       frame.ButtonSet(btnWarm, warm, warmon);
 
@@ -115,7 +115,7 @@ public class FrameSpringType extends JFrame{
          }
       });
       
-      // light ÆÈ·¹Æ®Ã¢
+      // light íŒ”ë ˆíŠ¸ì°½
       JButton spLightPlt = new JButton();
       frame.ButtonSet(spLightPlt, info, infoon);
       
@@ -131,7 +131,7 @@ public class FrameSpringType extends JFrame{
             spltPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon splt = new ImageIcon("image/info/º½¶óÆÈ.png");
+            ImageIcon splt = new ImageIcon("image/info/ë´„ë¼íŒ”.png");
             JLabel ltspplt = new JLabel(splt);
             ltspplt.setBounds(0, 150, 550, 550);
             spltPlt.add(ltspplt);
@@ -139,9 +139,9 @@ public class FrameSpringType extends JFrame{
          }
       });
       
-      // light ¹öÆ°
-      ImageIcon light = new ImageIcon("image/frame/¶óÀÌÆ®.png");
-      ImageIcon lighton = new ImageIcon("image/frame/¶óÀÌÆ®on.png");
+      // light ë²„íŠ¼
+      ImageIcon light = new ImageIcon("image/frame/ë¼ì´íŠ¸.png");
+      ImageIcon lighton = new ImageIcon("image/frame/ë¼ì´íŠ¸on.png");
       JButton btnLight = new JButton();
       frame.ButtonSet(btnLight, light, lighton);
 
@@ -157,7 +157,7 @@ public class FrameSpringType extends JFrame{
       });
       
       
-      // back ¹öÆ°
+      // back ë²„íŠ¼
       JButton btnBack = new JButton();
       frame.goBack(btnBack);
 
@@ -169,15 +169,15 @@ public class FrameSpringType extends JFrame{
          }
       });
       
-      // main ¹öÆ°
+      // main ë²„íŠ¼
       JButton btnMain = new JButton();
       frame.goMain(btnMain);
       
-      // ¹è°æÈ¿°ú Ã³¸®
+      // ë°°ê²½íš¨ê³¼ ì²˜ë¦¬
       JLabel effect = new JLabel();
       frame.backEffect(effect);
       
-      // ¼¼ÆÃ
+      // ì„¸íŒ…
       frame.setVisible(true);;
       
    }

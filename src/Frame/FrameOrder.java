@@ -43,16 +43,16 @@ public class FrameOrder extends JFrame {
 			total += MyShop.buylist.get(i).getPrice();
 		}
 
-		// ÆùÆ®
+		// í°íŠ¸
 		Font txtFont = (new Font("Noto Sans KR Medium", Font.PLAIN, 15));
 		Font numFont = (new Font("Will&Grace", Font.PLAIN, 15));
 
-		// ÁÖ¹®³»¿ª
+		// ì£¼ë¬¸ë‚´ì—­
 		JPanel orderList = new JPanel();
 		orderList.setLayout(new GridLayout(1, 5));
 		orderList.setBounds(30, 190, 530, 120);
 		orderList.setBackground(new Color(226, 224, 222));
-		orderList.setBorder(new TitledBorder(new LineBorder(Color.LIGHT_GRAY), "ÁÖ¹®³»¿ª", TitledBorder.LEADING,
+		orderList.setBorder(new TitledBorder(new LineBorder(Color.LIGHT_GRAY), "ì£¼ë¬¸ë‚´ì—­", TitledBorder.LEADING,
 				TitledBorder.TOP, new Font("Noto Sans KR Medium", Font.BOLD, 20), new Color(000, 000, 000)));
 		frame.add(orderList);
 
@@ -77,55 +77,55 @@ public class FrameOrder extends JFrame {
 			}
 		}
 
-		TextArea MyShopping = new TextArea("ÁÖ¹®»óÇ°¸í :" + orderInfo + "\n\n°áÁ¦±İ¾× : " + total + ",000¿ø", 0, 0,
+		TextArea MyShopping = new TextArea("ì£¼ë¬¸ìƒí’ˆëª… :" + orderInfo + "\n\nê²°ì œê¸ˆì•¡ : " + total + ",000ì›", 0, 0,
 				TextArea.SCROLLBARS_VERTICAL_ONLY);
 		MyShopping.setFont(txtFont);
 		orderList.add(MyShopping);
 
-		// ¹è¼ÛÁö ÀÔ·Â
-		JPanel deliver = new JPanel(); // ¹è¼ÛÁö ÆĞ³Î »ı¼º
+		// ë°°ì†¡ì§€ ì…ë ¥
+		JPanel deliver = new JPanel(); // ë°°ì†¡ì§€ íŒ¨ë„ ìƒì„±
 		deliver.setLayout(new GridLayout(6, 3, 10, 10));
-		deliver.setBounds(30, 338, 530, 230); // °¡·Î³ĞÀÌ
+		deliver.setBounds(30, 338, 530, 230); // ê°€ë¡œë„“ì´
 		deliver.setBackground(new Color(226, 224, 222));
-		deliver.setBorder(new TitledBorder(new TitledBorder(new LineBorder(Color.LIGHT_GRAY)), // Å×µÎ¸®¾øÀ½
-				"¹è´ŞÁ¤º¸", // ³»¿ë
-				TitledBorder.LEADING, // ÅØ½ºÆ® Á¤·Ä¹æ½Ä : ¾çÂÊÁ¤·Ä
-				TitledBorder.TOP, // ÅØ½ºÆ® Ç¥½Ã À§Ä¡ : »ó´Ü
-				new Font("Noto Sans KR Medium", Font.BOLD, 20), new Color(000, 000, 000))); // »ö»ó
+		deliver.setBorder(new TitledBorder(new TitledBorder(new LineBorder(Color.LIGHT_GRAY)), // í…Œë‘ë¦¬ì—†ìŒ
+				"ë°°ì†¡ì •ë³´", // ë‚´ìš©
+				TitledBorder.LEADING, // í…ìŠ¤íŠ¸ ì •ë ¬ë°©ì‹ : ì–‘ìª½ì •ë ¬
+				TitledBorder.TOP, // í…ìŠ¤íŠ¸ í‘œì‹œ ìœ„ì¹˜ : ìƒë‹¨
+				new Font("Noto Sans KR Medium", Font.BOLD, 20), new Color(000, 000, 000))); // ìƒ‰ìƒ
 
-		// ¼ºÇÔ
+		// ì„±í•¨
 		TextField name = new TextField("", 30);
 		name.setFont(txtFont);
-		Label cName = new Label("ÁÖ¹®ÀÚ ¼ºÇÔ");
+		Label cName = new Label("ì£¼ë¬¸ì ì„±í•¨");
 		cName.setFont(txtFont);
 		deliver.add(cName);
 		deliver.add(name);
 
-		// ÁÖ¼Ò
+		// ì£¼ì†Œ
 		TextField adress = new TextField("", 30);
 		adress.setFont(txtFont);
-		Label cAddress = new Label("ÁÖ¼Ò");
+		Label cAddress = new Label("ì£¼ì†Œ");
 		cAddress.setFont(txtFont);
 		deliver.add(cAddress);
 		deliver.add(adress);
 
-		// ÀüÈ­¹øÈ£
+		// ì „í™”ë²ˆí˜¸
 		TextField phone = new TextField("", 30);
 		phone.setFont(txtFont);
-		Label cPhone = new Label("ÀüÈ­¹øÈ£");
+		Label cPhone = new Label("ì „í™”ë²ˆí˜¸");
 		cPhone.setFont(txtFont);
 		deliver.add(cPhone);
 		deliver.add(phone);
 
-		// ¹è¼Û½Ã ¿äÃ»»çÇ×
-		TextField demand = new TextField("¹è¼ÛÀü ¿¬¶ô¹Ù¶ø´Ï´Ù.", 30);
+		// ë°°ì†¡ì‹œ ìš”ì²­ì‚¬í•­
+		TextField demand = new TextField("ë°°ì†¡ì „ ì—°ë½ë°”ëë‹ˆë‹¤.", 30);
 		demand.setFont(txtFont);
-		Label cDemand = new Label("¹è¼Û½Ã ¿äÃ»»çÇ×");
+		Label cDemand = new Label("ë°°ì†¡ì‹œ ìš”ì²­ì‚¬í•­");
 		cDemand.setFont(txtFont);
 		deliver.add(cDemand);
 		deliver.add(demand);
 
-		// °áÁ¦ÇÏ±â ¹öÆ°
+		// ê²°ì œí•˜ê¸° ë²„íŠ¼
 		ImageIcon pay = new ImageIcon("image/frame/pay.png");
 		ImageIcon payon = new ImageIcon("image/frame/payon.png");
 		JButton btnPay = new JButton();
@@ -138,20 +138,21 @@ public class FrameOrder extends JFrame {
 		btnPay.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null, "ÁÖ¹®ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
-				MyShop.clear();
+				JOptionPane.showMessageDialog(null, "ì£¼ë¬¸ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
+				MyShop.buylist.clear();
+				MyShop.pCount=0;
 				frame.dispose();
 				new FrameStart();
 			}
 		});
 
-		// ¿Ï·á
-		JButton btnInput = new JButton("ÀÔ·Â");
+		// ì™„ë£Œ
+		JButton btnInput = new JButton("ì…ë ¥");
 		// btn.setBackground(Color.ORANGE);
-		btnInput.setBackground(new Color(207, 207, 207)); // ¹öÆ° ¹ÙÅÁ»ö
-		btnInput.setForeground(Color.BLACK); // ±ÛÀÚ»ö
-		btnInput.setBorderPainted(false); // ¹öÆ° Å×µÎ¸® ºñÈ°¼ºÈ­
-		// btn.setOpaque(true); //ºÒÅõ¸í
+		btnInput.setBackground(new Color(207, 207, 207)); // ë²„íŠ¼ ë°”íƒ•ìƒ‰
+		btnInput.setForeground(Color.BLACK); // ê¸€ììƒ‰
+		btnInput.setBorderPainted(false); // ë²„íŠ¼ í…Œë‘ë¦¬ ë¹„í™œì„±í™”
+		// btn.setOpaque(true); //ë¶ˆíˆ¬ëª…
 		frame.add(btnInput);
 		btnInput.setBounds(200, 512, 180, 40);
 		btnInput.setEnabled(false);
@@ -159,25 +160,25 @@ public class FrameOrder extends JFrame {
 		frame.add(deliver);
 
 		btnInput.addActionListener(new ActionListener() {
-			// "¼ºÇÔ : " + name.getText() + "\n\n" +
+			// "ì„±í•¨ : " + name.getText() + "\n\n" +
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
 				JOptionPane.showMessageDialog(null,
-						name.getText() + "´ÔÀÇ ¹è¼ÛÁö ÀÔ·ÂÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.  \n\n" + "ÁÖ¼Ò : " + adress.getText() + "\n\n" + "ÀüÈ­¹øÈ£ : "
-								+ phone.getText() + "\n\n" + "¿äÃ»»çÇ× : " + demand.getText());
+						name.getText() + "ë‹˜ì˜ ë°°ì†¡ì§€ ì…ë ¥ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.  \n\n" + "ì£¼ì†Œ : " + adress.getText() + "\n\n" + "ì „í™”ë²ˆí˜¸ : "
+								+ phone.getText() + "\n\n" + "ìš”ì²­ì‚¬í•­ : " + demand.getText());
 				btnPay.setVisible(true);
 			}
 		});
 
-		// ¿Ï·á ¹öÆ° È°¼ºÈ­
+		// ì™„ë£Œ ë²„íŠ¼ í™œì„±í™”
 		adress.addTextListener(new TextListener() {
 
 			@Override
-			public void textValueChanged(TextEvent e) { // ±ÛÀÚ¸¦ Ä¥¶§ ÀÔ·ÂÇÒ ¼ö ÀÖ°Ô Ç®¾îÁÜ
+			public void textValueChanged(TextEvent e) { // ê¸€ìë¥¼ ì¹ ë•Œ ì…ë ¥í•  ìˆ˜ ìˆê²Œ í’€ì–´ì¤Œ
 
-				if (btnInput.getText().equals("")) { // ³»¿ëÀÌ ¾øÀ¸¸é
-					btnInput.setEnabled(false); // ¹öÆ° Àá±İ
+				if (btnInput.getText().equals("")) { // ë‚´ìš©ì´ ì—†ìœ¼ë©´
+					btnInput.setEnabled(false); // ë²„íŠ¼ ì ê¸ˆ
 
 				}
 			}
@@ -192,28 +193,28 @@ public class FrameOrder extends JFrame {
 
 			@Override
 			public void focusGained(FocusEvent e) {
-				if (demand.getText().equals("¹è¼ÛÀü ¿¬¶ô¹Ù¶ø´Ï´Ù.")) {
+				if (demand.getText().equals("ë°°ì†¡ì „ ì—°ë½ë°”ëë‹ˆë‹¤.")) {
 					demand.setText("");
 				}
 			}
 		});
 
-		// °áÁ¦¼ö´Ü
+		// ê²°ì œìˆ˜ë‹¨
 		JPanel payment = new JPanel();
 		payment.setLayout(new FlowLayout());
 		payment.setBounds(30, 590, 530, 70);
 		payment.setBackground(new Color(226, 224, 222));
-		payment.setBorder(new TitledBorder(new TitledBorder(new LineBorder(Color.LIGHT_GRAY)), // Å×µÎ¸®¾øÀ½
-				"°áÁ¦¼ö´Ü", // ³»¿ë
-				TitledBorder.LEADING, // ÅØ½ºÆ® Á¤·Ä¹æ½Ä:¾çÂÊÁ¤·Ä
-				TitledBorder.TOP, // ÅØ½ºÆ® Ç¥½Ã À§Ä¡ : »ó´Ü
+		payment.setBorder(new TitledBorder(new TitledBorder(new LineBorder(Color.LIGHT_GRAY)), // í…Œë‘ë¦¬ì—†ìŒ
+				"ê²°ì œìˆ˜ë‹¨", // ë‚´ìš©
+				TitledBorder.LEADING, // í…ìŠ¤íŠ¸ ì •ë ¬ë°©ì‹:ì–‘ìª½ì •ë ¬
+				TitledBorder.TOP, // í…ìŠ¤íŠ¸ í‘œì‹œ ìœ„ì¹˜ : ìƒë‹¨
 				new Font("Noto Sans KR Medium", Font.BOLD, 20), new Color(000, 000, 000)));
 		add(payment);
 
-		new Label("°áÁ¦¼ö´Ü").setFont(txtFont);
+		new Label("ê²°ì œìˆ˜ë‹¨").setFont(txtFont);
 		CheckboxGroup group = new CheckboxGroup();
-		Checkbox card = new Checkbox("Ä«µå", group, true);
-		Checkbox deposit = new Checkbox("¹«ÅëÀåÀÔ±İ", group, false);
+		Checkbox card = new Checkbox("ì¹´ë“œ", group, true);
+		Checkbox deposit = new Checkbox("ë¬´í†µì¥ì…ê¸ˆ", group, false);
 		Checkbox kakaopay = new Checkbox("kakaoPay", group, false);
 
 		payment.add(card);
@@ -224,13 +225,13 @@ public class FrameOrder extends JFrame {
 		phone.addTextListener(new TextListener() {
 
 			@Override
-			public void textValueChanged(TextEvent e) { // ±ÛÀÚ¸¦ Ä¥¶§ ÀÔ·ÂÇÒ ¼ö ÀÖ°Ô Ç®¾îÁÜ
+			public void textValueChanged(TextEvent e) { // ê¸€ìë¥¼ ì¹ ë•Œ ì…ë ¥í•  ìˆ˜ ìˆê²Œ í’€ì–´ì¤Œ
 
-				if (btnInput.getText().equals("")) { // ³»¿ëÀÌ ¾øÀ¸¸é
-					btnInput.setEnabled(false); // ¹öÆ° Àá±İ
+				if (btnInput.getText().equals("")) { // ë‚´ìš©ì´ ì—†ìœ¼ë©´
+					btnInput.setEnabled(false); // ë²„íŠ¼ ì ê¸ˆ
 
 				} else {
-					btnInput.setEnabled(true);// ±×·¸Áö ¾ÊÀ¸¸é ¹öÆ° È°¼ºÈ­
+					btnInput.setEnabled(true);// ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ ë²„íŠ¼ í™œì„±í™”
 				}
 			}
 		});
@@ -240,7 +241,7 @@ public class FrameOrder extends JFrame {
 		JButton lblTitle = new JButton();
 		frame.logoSet(lblImage, lblLED, lblTitle);
 
-		// back¹öÆ°
+		// backë²„íŠ¼
 		JButton btnBack = new JButton();
 		frame.goBack(btnBack);
 
@@ -252,7 +253,7 @@ public class FrameOrder extends JFrame {
 			}
 		});
 
-		// main¹öÆ°
+		// mainë²„íŠ¼
 		JButton btnMain = new JButton();
 		frame.goMain(btnMain);
 
@@ -260,5 +261,5 @@ public class FrameOrder extends JFrame {
 		frame.backEffect(effect);
 
 		frame.setVisible(true);
-	}// »ı¼ºÀÚ
-}// Å¬·¡½º
+	}// ìƒì„±ì
+}// í´ë˜ìŠ¤

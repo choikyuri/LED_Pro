@@ -17,11 +17,11 @@ import Set.BaseSet;
 public class FrameSummerType extends JFrame{
    public FrameSummerType() {
       
-      // BaseSet °´Ã¼ »ı¼º
+      // BaseSet ê°ì²´ ìƒì„±
       BaseSet frame = new BaseSet();
       
-      // ¿©¸§Å¸ÀÔ ÀÌ¹ÌÁö
-      ImageIcon summer = new ImageIcon("image/frame/¿©¸§Å¸ÀÔ.png");
+      // ì—¬ë¦„íƒ€ì… ì´ë¯¸ì§€
+      ImageIcon summer = new ImageIcon("image/frame/ì—¬ë¦„íƒ€ì….png");
       JLabel lblSummer = new JLabel(summer);
       lblSummer.setBounds(115, 70, 350, 110);
       frame.add(lblSummer);
@@ -31,9 +31,9 @@ public class FrameSummerType extends JFrame{
       JButton lblTitle = new JButton();
       frame.logoSet(lblImage, lblLED, lblTitle);
 
-      // light ÆÈ·¹Æ®Ã¢
-      ImageIcon info = new ImageIcon("image/info/ÆÈ·¹Æ®.png");
-      ImageIcon infoon = new ImageIcon("image/info/ÆÈ·¹Æ®on.png");
+      // light íŒ”ë ˆíŠ¸ì°½
+      ImageIcon info = new ImageIcon("image/info/íŒ”ë ˆíŠ¸.png");
+      ImageIcon infoon = new ImageIcon("image/info/íŒ”ë ˆíŠ¸on.png");
       JButton suLightPlt = new JButton();
       frame.ButtonSet(suLightPlt, info, infoon);
       
@@ -49,7 +49,7 @@ public class FrameSummerType extends JFrame{
             sultPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon sult = new ImageIcon("image/info/¿©¶óÆÈ.png");
+            ImageIcon sult = new ImageIcon("image/info/ì—¬ë¼íŒ”.png");
             JLabel ltsuplt = new JLabel(sult);
             ltsuplt.setBounds(0, 150, 550, 550);
             sultPlt.add(ltsuplt);
@@ -57,9 +57,9 @@ public class FrameSummerType extends JFrame{
          }
       });
       
-      // light ¹öÆ°
-      ImageIcon light = new ImageIcon("image/frame/¶óÀÌÆ®.png");
-      ImageIcon lighton = new ImageIcon("image/frame/¶óÀÌÆ®on.png");
+      // light ë²„íŠ¼
+      ImageIcon light = new ImageIcon("image/frame/ë¼ì´íŠ¸.png");
+      ImageIcon lighton = new ImageIcon("image/frame/ë¼ì´íŠ¸on.png");
       JButton btnLight = new JButton();
       frame.ButtonSet(btnLight, light, lighton);
 
@@ -74,7 +74,7 @@ public class FrameSummerType extends JFrame{
          }
       });
       
-      // cool ÆÈ·¹Æ®Ã¢
+      // cool íŒ”ë ˆíŠ¸ì°½
       JButton suCoolPlt = new JButton();
       frame.ButtonSet(suCoolPlt, info, infoon);
       
@@ -90,7 +90,7 @@ public class FrameSummerType extends JFrame{
             sucoPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon suco = new ImageIcon("image/info/¿©ÄğÆÈ.png");
+            ImageIcon suco = new ImageIcon("image/info/ì—¬ì¿¨íŒ”.png");
             JLabel cosuplt = new JLabel(suco);
             cosuplt.setBounds(0, 150, 550, 550);
             sucoPlt.add(cosuplt);
@@ -98,9 +98,9 @@ public class FrameSummerType extends JFrame{
          }
       });
       
-      // cool ¹öÆ°
-      ImageIcon cool = new ImageIcon("image/frame/Äğ.png");
-      ImageIcon coolon = new ImageIcon("image/frame/Äğon.png");
+      // cool ë²„íŠ¼
+      ImageIcon cool = new ImageIcon("image/frame/ì¿¨.png");
+      ImageIcon coolon = new ImageIcon("image/frame/ì¿¨on.png");
       JButton btnCool = new JButton();
       frame.ButtonSet(btnCool, cool, coolon);
 
@@ -115,7 +115,7 @@ public class FrameSummerType extends JFrame{
          }
       });
       
-      // mute ÆÈ·¹Æ®Ã¢
+      // mute íŒ”ë ˆíŠ¸ì°½
       JButton suMutePlt = new JButton();
       frame.ButtonSet(suMutePlt, info, infoon);
       
@@ -131,7 +131,7 @@ public class FrameSummerType extends JFrame{
             sumtPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon sumt = new ImageIcon("image/info/¿©¹ÂÆÈ.png");
+            ImageIcon sumt = new ImageIcon("image/info/ì—¬ë®¤íŒ”.png");
             JLabel mtsuplt = new JLabel(sumt);
             mtsuplt.setBounds(0, 150, 550, 550);
             sumtPlt.add(mtsuplt);
@@ -139,9 +139,9 @@ public class FrameSummerType extends JFrame{
          }
       });
       
-      // mute ¹öÆ°
-      ImageIcon mute = new ImageIcon("image/frame/¹ÂÆ®.png");
-      ImageIcon muteon = new ImageIcon("image/frame/¹ÂÆ®on.png");
+      // mute ë²„íŠ¼
+      ImageIcon mute = new ImageIcon("image/frame/ë®¤íŠ¸.png");
+      ImageIcon muteon = new ImageIcon("image/frame/ë®¤íŠ¸on.png");
       JButton btnMute = new JButton();
       frame.ButtonSet(btnMute, mute, muteon);
 
@@ -157,7 +157,7 @@ public class FrameSummerType extends JFrame{
       });
       
       
-      // back ¹öÆ°
+      // back ë²„íŠ¼
       JButton btnBack = new JButton();
       frame.goBack(btnBack);
 
@@ -169,15 +169,15 @@ public class FrameSummerType extends JFrame{
          }
       });
       
-      // main ¹öÆ°
+      // main ë²„íŠ¼
       JButton btnMain = new JButton();
       frame.goMain(btnMain);
       
-      // ¹è°æÈ¿°ú Ã³¸®
+      // ë°°ê²½íš¨ê³¼ ì²˜ë¦¬
       JLabel effect = new JLabel();
       frame.backEffect(effect);
       
-      // ¼¼ÆÃ
+      // ì„¸íŒ…
       frame.setVisible(true);
       
    }

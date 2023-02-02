@@ -7,22 +7,22 @@ import java.net.Socket;
 
 public class CopyClient extends Thread{
    
-   //¼­¹ö Á¢¼ÓÀ» À§ÇÑ °´Ã¼µé
-   Socket s; //Å¬¶óÀÌ¾ğÆ® Á¤º¸
+   //ì„œë²„ ì ‘ì†ì„ ìœ„í•œ ê°ì²´ë“¤
+   Socket s; //í´ë¼ì´ì–¸íŠ¸ ì •ë³´
    BufferedReader in;
    public PrintWriter out;
    ChatServer server;
    String ip;
    
    public CopyClient(Socket s, ChatServer server) {
-      this.s=s; //Å¬¶óÀÌ¾ğÆ®
-      this.server=server; //¼­¹ö
+      this.s=s; //í´ë¼ì´ì–¸íŠ¸
+      this.server=server; //ì„œë²„
       
       try {
          
          in=new BufferedReader(new InputStreamReader(s.getInputStream()));
-         out=new PrintWriter(s.getOutputStream(), true); //true : append(Ãß°¡)
-         ip=s.getInetAddress().getHostAddress(); //Å¬¶óÀÌ¾ğÆ® ip
+         out=new PrintWriter(s.getOutputStream(), true); //true : append(ì¶”ê°€)
+         ip=s.getInetAddress().getHostAddress(); //í´ë¼ì´ì–¸íŠ¸ ip
          
       } catch (Exception e) {
          e.printStackTrace();
@@ -43,11 +43,11 @@ public class CopyClient extends Thread{
                break;
             }
             
-            //°ü¸®ÀÚ - °í°´ºĞ¸®
+            //ê´€ë¦¬ì - ê³ ê°ë¶„ë¦¬
             if(ip.equals("172.16.10.18")) {
-               server.sendMessage("°ü¸®ÀÚ : " + msg);
+               server.sendMessage("ê´€ë¦¬ì : " + msg);
             }else {
-               server.sendMessage("°í°´ : " + msg);
+               server.sendMessage("ê³ ê° : " + msg);
             }
                
          } catch (Exception e) {

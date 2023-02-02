@@ -17,11 +17,11 @@ import Set.BaseSet;
 public class FrameAutumnType extends JFrame {
    public FrameAutumnType() {
 
-      // BaseSet °´Ã¼ »ı¼º
+      // BaseSet ê°ì²´ ìƒì„±
       BaseSet frame = new BaseSet();
 
-      // °¡À»Å¸ÀÔ ÀÌ¹ÌÁö
-      ImageIcon autumn = new ImageIcon("image/frame/°¡À»Å¸ÀÔ.png");
+      // ê°€ì„íƒ€ì… ì´ë¯¸ì§€
+      ImageIcon autumn = new ImageIcon("image/frame/ê°€ì„íƒ€ì….png");
       JLabel lblAutumn = new JLabel(autumn);
       lblAutumn.setBounds(115,70,350,110);
       frame.add(lblAutumn);
@@ -31,9 +31,9 @@ public class FrameAutumnType extends JFrame {
       JButton lblTitle = new JButton();
       frame.logoSet(lblImage, lblLED, lblTitle);
 
-      // mute ÆÈ·¹Æ®Ã¢
-      ImageIcon info = new ImageIcon("image/info/ÆÈ·¹Æ®.png");
-      ImageIcon infoon = new ImageIcon("image/info/ÆÈ·¹Æ®on.png");
+      // mute íŒ”ë ˆíŠ¸ì°½
+      ImageIcon info = new ImageIcon("image/info/íŒ”ë ˆíŠ¸.png");
+      ImageIcon infoon = new ImageIcon("image/info/íŒ”ë ˆíŠ¸on.png");
       JButton auMutePlt = new JButton();
       frame.ButtonSet(auMutePlt, info, infoon);
       
@@ -49,7 +49,7 @@ public class FrameAutumnType extends JFrame {
             aumtPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon aumt = new ImageIcon("image/info/°¥¹ÂÆÈ.png");
+            ImageIcon aumt = new ImageIcon("image/info/ê°ˆë®¤íŒ”.png");
             JLabel mtauplt = new JLabel(aumt);
             mtauplt.setBounds(0, 150, 550, 550);
             aumtPlt.add(mtauplt);
@@ -57,9 +57,9 @@ public class FrameAutumnType extends JFrame {
          }
       });
       
-      // mute ¹öÆ°
-      ImageIcon mute = new ImageIcon("image/frame/¹ÂÆ®.png");
-      ImageIcon muteon = new ImageIcon("image/frame/¹ÂÆ®on.png");
+      // mute ë²„íŠ¼
+      ImageIcon mute = new ImageIcon("image/frame/ë®¤íŠ¸.png");
+      ImageIcon muteon = new ImageIcon("image/frame/ë®¤íŠ¸on.png");
       JButton btnMute = new JButton();
       frame.ButtonSet(btnMute, mute, muteon);
       
@@ -74,7 +74,7 @@ public class FrameAutumnType extends JFrame {
          }
       });
       
-      // warm ÆÈ·¹Æ®Ã¢
+      // warm íŒ”ë ˆíŠ¸ì°½
       JButton auWarmPlt = new JButton();
       frame.ButtonSet(auWarmPlt, info, infoon);
       
@@ -90,7 +90,7 @@ public class FrameAutumnType extends JFrame {
             auwmPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon auwm = new ImageIcon("image/info/°¥¿úÆÈ.png");
+            ImageIcon auwm = new ImageIcon("image/info/ê°ˆì›œíŒ”.png");
             JLabel wmauplt = new JLabel(auwm);
             wmauplt.setBounds(0, 150, 550, 550);
             auwmPlt.add(wmauplt);
@@ -98,9 +98,9 @@ public class FrameAutumnType extends JFrame {
          }
       });
       
-      // warm ¹öÆ°
-      ImageIcon warm = new ImageIcon("image/frame/¿ú.png");
-      ImageIcon warmon = new ImageIcon("image/frame/¿úon.png");
+      // warm ë²„íŠ¼
+      ImageIcon warm = new ImageIcon("image/frame/ì›œ.png");
+      ImageIcon warmon = new ImageIcon("image/frame/ì›œon.png");
       JButton btnWarm = new JButton();
       frame.ButtonSet(btnWarm, warm, warmon);
 
@@ -115,7 +115,7 @@ public class FrameAutumnType extends JFrame {
          }
       });
       
-      // deep ÆÈ·¹Æ®Ã¢
+      // deep íŒ”ë ˆíŠ¸ì°½
       JButton auDeepPlt = new JButton();
       frame.ButtonSet(auDeepPlt, info, infoon);
       
@@ -131,7 +131,7 @@ public class FrameAutumnType extends JFrame {
             audpPlt.setBounds(((int) tk.getScreenSize().getWidth()) / 2 - 275,
                   ((int) tk.getScreenSize().getHeight()) / 2 - 275, 
                   550, 550);
-            ImageIcon audp = new ImageIcon("image/info/°¥µöÆÈ.png");
+            ImageIcon audp = new ImageIcon("image/info/ê°ˆë”¥íŒ”.png");
             JLabel dpauplt = new JLabel(audp);
             dpauplt.setBounds(0, 150, 550, 550);
             audpPlt.add(dpauplt);
@@ -139,9 +139,9 @@ public class FrameAutumnType extends JFrame {
          }
       });
       
-      // deep ¹öÆ°
-      ImageIcon deep = new ImageIcon("image/frame/µö.png");
-      ImageIcon deepon = new ImageIcon("image/frame/µöon.png");
+      // deep ë²„íŠ¼
+      ImageIcon deep = new ImageIcon("image/frame/ë”¥.png");
+      ImageIcon deepon = new ImageIcon("image/frame/ë”¥on.png");
       JButton btnDeep = new JButton();
       frame.ButtonSet(btnDeep, deep, deepon);
 
@@ -156,7 +156,7 @@ public class FrameAutumnType extends JFrame {
          }
       });
       
-      // back ¹öÆ°
+      // back ë²„íŠ¼
       JButton btnBack = new JButton();
       frame.goBack(btnBack);
 
@@ -168,15 +168,15 @@ public class FrameAutumnType extends JFrame {
          }
       });
       
-      // main ¹öÆ°
+      // main ë²„íŠ¼
       JButton btnMain = new JButton();
       frame.goMain(btnMain);
       
-      // ¹è°æÈ¿°ú Ã³¸®
+      // ë°°ê²½íš¨ê³¼ ì²˜ë¦¬
       JLabel effect = new JLabel();
       frame.backEffect(effect);
       
-      // ¼¼ÆÃ
+      // ì„¸íŒ…
       frame.setVisible(true);
 
    }

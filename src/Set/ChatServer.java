@@ -11,8 +11,8 @@ public class ChatServer extends Thread {
 
 	public ChatServer() {
 		try {
-			list = new ArrayList<CopyClient>(); // ¸®½ºÆ® »ı¼º
-			ss = new ServerSocket(8888);
+			list = new ArrayList<CopyClient>(); // ë¦¬ìŠ¤íŠ¸ ìƒì„±
+			ss = new ServerSocket(2222);
 
 			System.out.println("Server Start!");
 		} catch (Exception e) {
@@ -27,24 +27,24 @@ public class ChatServer extends Thread {
 	@Override
 	public void run() {
 		while (true) {
-			// Á¢¼Ó´ë±â »óÅÂ
+			// ì ‘ì†ëŒ€ê¸° ìƒíƒœ
 			try {
 				Socket s = ss.accept();
 
-				System.out.println("¾È³çÇÏ¼¼¿ä. ¹®ÀÇÇÏ½Ç ³»¿ëÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-				// Å¬¶óÀÌ¾ğÆ®¿Í ¼­¹öÀÇ Á¤º¸¸¦ °¡Áø CopyClient »ı¼º
+				System.out.println("ì•ˆë…•í•˜ì„¸ìš”. ë¬¸ì˜í•˜ì‹¤ ë‚´ìš©ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.");
+				// í´ë¼ì´ì–¸íŠ¸ì™€ ì„œë²„ì˜ ì •ë³´ë¥¼ ê°€ì§„ CopyClient ìƒì„±
 				CopyClient cc = new CopyClient(s, this);
-				list.add(cc); // list¿¡ CopyClientÃß°¡
-				cc.start(); // ÇØ´ç Å¬¶óÀÌ¾ğÆ® °¢ÀÚÀÇ ½º·¹µå ±¸µ¿ => InputStreamÀ» ÅëÇØ Å¬¶óÀÌ¾ğÆ®·ÎºÎÅÍ ³Ñ¾î¿Â °ª Ã³¸®
+				list.add(cc); // listì— CopyClientì¶”ê°€
+				cc.start(); // í•´ë‹¹ í´ë¼ì´ì–¸íŠ¸ ê°ìì˜ ìŠ¤ë ˆë“œ êµ¬ë™ => InputStreamì„ í†µí•´ í´ë¼ì´ì–¸íŠ¸ë¡œë¶€í„° ë„˜ì–´ì˜¨ ê°’ ì²˜ë¦¬
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
 	}
 
-	// ÀÛ¼ºÇÑ ³»¿ëÀ» Å¬¶óÀÌ¾ğÆ®¿¡°Ô Àü´Ş
+	// ì‘ì„±í•œ ë‚´ìš©ì„ í´ë¼ì´ì–¸íŠ¸ì—ê²Œ ì „ë‹¬
 	public void sendMessage(String msg) {
-		// Á¢¼ÓÀÚµéÀº CopyClient·Î ¸¸µé¾îÁ®¼­ ArrayList¿¡ ¸ğµÎ ÀúÀåµÈ »óÅÂ´Ù
+		// ì ‘ì†ìë“¤ì€ CopyClientë¡œ ë§Œë“¤ì–´ì ¸ì„œ ArrayListì— ëª¨ë‘ ì €ì¥ëœ ìƒíƒœë‹¤
 		try {
 			for (CopyClient cc : list) {
 				cc.out.println(msg);
@@ -55,8 +55,8 @@ public class ChatServer extends Thread {
 	}
 
 	public void removeClient(CopyClient cc) {
-		list.remove(cc); // ¸Ş°³º¯¼ö·Î Àü´Ş¹ŞÀº Å¬¶óÀÌ¾ğÆ®¸¦ ArrayList¿¡¼­ Á¦°Å
-		sendMessage("¡Ù¡Ú¡Ù¡Ú ÅğÀå! ¡Ù¡Ú¡Ù¡Ú");
+		list.remove(cc); // ë©”ê°œë³€ìˆ˜ë¡œ ì „ë‹¬ë°›ì€ í´ë¼ì´ì–¸íŠ¸ë¥¼ ArrayListì—ì„œ ì œê±°
+		sendMessage("â˜†â˜…â˜†â˜… í‡´ì¥! â˜†â˜…â˜†â˜…");
 
 	}
 }

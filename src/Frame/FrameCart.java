@@ -27,7 +27,7 @@ public class FrameCart extends JFrame {
 		lblCart.setBounds(115, 70, 350, 85);
 		frame.add(lblCart);
 
-		// order¹öÆ°
+		// orderë²„íŠ¼
 		ImageIcon order = new ImageIcon("image/frame/order.png");
 		ImageIcon orderon = new ImageIcon("image/frame/orderon.png");
 		JButton btnOrder = new JButton();
@@ -43,11 +43,11 @@ public class FrameCart extends JFrame {
 		});
 
 		if (MyShop.buylist.isEmpty()) {
-			JOptionPane.showMessageDialog(null, "Àå¹Ù±¸´Ï°¡ ºñ¾îÀÖ½À´Ï´Ù.");
+			JOptionPane.showMessageDialog(null, "ì¥ë°”êµ¬ë‹ˆê°€ ë¹„ì–´ìˆìŠµë‹ˆë‹¤.");
 			btnOrder.setVisible(false);
 		}
 
-		// ÆùÆ®
+		// í°íŠ¸
 		Font txtFont = (new Font("Noto Serif KR Medium", Font.BOLD, 17));
 		Font numFont = (new Font("Will&Grace", Font.BOLD, 17));
 
@@ -60,28 +60,28 @@ public class FrameCart extends JFrame {
 		frame.add(basket);
 		basket.setLayout(null);
 
-		// »èÁ¦, Ç×¸ñ, °¡°İ
-		JLabel column1 = new JLabel("Ç×¸ñ");
+		// ì‚­ì œ, í•­ëª©, ê°€ê²©
+		JLabel column1 = new JLabel("í•­ëª©");
 		column1.setFont(txtFont);
 		column1.setBounds(130, 10, 80, 50);
 		basket.add(column1);
 
-		JLabel column2 = new JLabel("°¡°İ");
+		JLabel column2 = new JLabel("ê°€ê²©");
 		column2.setFont(txtFont);
 		column2.setBounds(330, 10, 80, 50);
 		basket.add(column2);
 
-		JLabel column3 = new JLabel("»èÁ¦");
+		JLabel column3 = new JLabel("ì‚­ì œ");
 		column3.setFont(txtFont);
 		column3.setBounds(450, 10, 80, 50);
 		basket.add(column3);
 
-		JLabel column4 = new JLabel("ÇÕ°è±İ¾× : ");
+		JLabel column4 = new JLabel("í•©ê³„ê¸ˆì•¡ : ");
 		column4.setFont(txtFont);
 		column4.setBounds(300, 465, 200, 50);
 		basket.add(column4);
 
-		// ÇÕ°è±İ¾×
+		// í•©ê³„ê¸ˆì•¡
 		int sum = 0;
 		for (int i = 0; i < MyShop.buylist.size(); i++) {
 			sum += MyShop.buylist.get(i).getPrice();
@@ -95,7 +95,7 @@ public class FrameCart extends JFrame {
 			lblTotal.setVisible(false);
 		}
 
-		// ¶óÀÎ¸¸µé±â
+		// ë¼ì¸ë§Œë“¤ê¸°
 		ImageIcon Line1 = new ImageIcon("image/frame/line.png");
 		JLabel lblLine1 = new JLabel(Line1);
 		lblLine1.setBounds(0, 60, 530, 1);
@@ -105,7 +105,7 @@ public class FrameCart extends JFrame {
 		ImageIcon delete = new ImageIcon("image/frame/delete.png");
 		ImageIcon deleteon = new ImageIcon("image/frame/deleteon.png");
 
-		// Àå¹Ù±¸´Ï ¸®½ºÆ® ±¸Çö
+		// ì¥ë°”êµ¬ë‹ˆ ë¦¬ìŠ¤íŠ¸ êµ¬í˜„
 		if (!MyShop.buylist.isEmpty()) {
 			for (int i = 0; i < MyShop.buylist.size(); i++) {
 				switch (i) {
@@ -133,7 +133,7 @@ public class FrameCart extends JFrame {
 					btnDlt1.addActionListener(new ActionListener() {
 						@Override
 						public void actionPerformed(ActionEvent e) {
-							JOptionPane.showMessageDialog(null, "Àå¹Ù±¸´Ï¿¡¼­ »èÁ¦Çß½À´Ï´Ù.");
+							JOptionPane.showMessageDialog(null, "ì¥ë°”êµ¬ë‹ˆì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤.");
 							MyShop.buylist.remove(0);
 							MyShop.pCount--;
 							new FrameCart();
@@ -169,7 +169,7 @@ public class FrameCart extends JFrame {
 					btnDlt2.addActionListener(new ActionListener() {
 						@Override
 						public void actionPerformed(ActionEvent e) {
-							JOptionPane.showMessageDialog(null, "Àå¹Ù±¸´Ï¿¡¼­ »èÁ¦Çß½À´Ï´Ù.");
+							JOptionPane.showMessageDialog(null, "ì¥ë°”êµ¬ë‹ˆì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤.");
 							MyShop.buylist.remove(1);
 							MyShop.pCount--;
 							new FrameCart();
@@ -206,7 +206,7 @@ public class FrameCart extends JFrame {
 					btnDlt3.addActionListener(new ActionListener() {
 						@Override
 						public void actionPerformed(ActionEvent e) {
-							JOptionPane.showMessageDialog(null, "Àå¹Ù±¸´Ï¿¡¼­ »èÁ¦Çß½À´Ï´Ù.");
+							JOptionPane.showMessageDialog(null, "ì¥ë°”êµ¬ë‹ˆì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤.");
 							MyShop.buylist.remove(2);
 							MyShop.pCount--;
 							new FrameCart();
@@ -243,7 +243,7 @@ public class FrameCart extends JFrame {
 					btnDlt4.addActionListener(new ActionListener() {
 						@Override
 						public void actionPerformed(ActionEvent e) {
-							JOptionPane.showMessageDialog(null, "Àå¹Ù±¸´Ï¿¡¼­ »èÁ¦Çß½À´Ï´Ù.");
+							JOptionPane.showMessageDialog(null, "ì¥ë°”êµ¬ë‹ˆì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤.");
 							MyShop.buylist.remove(3);
 							MyShop.pCount--;
 							new FrameCart();
@@ -280,7 +280,7 @@ public class FrameCart extends JFrame {
 					btnDlt5.addActionListener(new ActionListener() {
 						@Override
 						public void actionPerformed(ActionEvent e) {
-							JOptionPane.showMessageDialog(null, "Àå¹Ù±¸´Ï¿¡¼­ »èÁ¦Çß½À´Ï´Ù.");
+							JOptionPane.showMessageDialog(null, "ì¥ë°”êµ¬ë‹ˆì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤.");
 							MyShop.buylist.remove(4);
 							MyShop.pCount--;
 							new FrameCart();
@@ -292,13 +292,13 @@ public class FrameCart extends JFrame {
 			}
 		}
 
-		// ·Î°íµé
+		// ë¡œê³ ë“¤
 		JLabel lblImage = new JLabel();
 		JButton lblLED = new JButton();
 		JButton lblTitle = new JButton();
 		frame.logoSet(lblImage, lblLED, lblTitle);
 
-		// main¹öÆ°
+		// mainë²„íŠ¼
 		ImageIcon main = new ImageIcon("image/frame/main.png");
 		ImageIcon mainon = new ImageIcon("image/frame/mainon.png");
 		JButton btnMain = new JButton();
@@ -317,5 +317,5 @@ public class FrameCart extends JFrame {
 		frame.backEffect(effect);
 
 		frame.setVisible(true);
-	}// »ı¼ºÀÚ
+	}// ìƒì„±ì
 }// class

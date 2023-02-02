@@ -10,67 +10,52 @@ public class MyShop {
 
 	public static int pCount;
 
-	private static MyShop instance;
-
 	public static ArrayList<Shop> buylist = new ArrayList<>();
-
-	public static MyShop getMyShop() {
-		if (instance == null) {
-			instance = new MyShop();
-		}
-		return instance;
-	}
 
 	public static void add(Shop s) {
 
 		if (pCount > 5) {
-			JOptionPane.showMessageDialog(null, "Àå¹Ù±¸´Ï ÃÖ´ë »óÇ°¼ö·®À» ÃÊ°úÇß½À´Ï´Ù.");
+			JOptionPane.showMessageDialog(null, "ì¥ë°”êµ¬ë‹ˆ ìµœëŒ€ ìƒí’ˆìˆ˜ëŸ‰ì„ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤.");
 			pCount--;
 		} else {
 			if (buylist.size() == 0) {
 				buylist.add(s);
-				JOptionPane.showMessageDialog(null, s.getName() + " À»(¸¦) Àå¹Ù±¸´Ï¿¡ ´ã¾Ò½À´Ï´Ù.");
+				JOptionPane.showMessageDialog(null, s.getName() + " ì„(ë¥¼) ì¥ë°”êµ¬ë‹ˆì— ë‹´ì•˜ìŠµë‹ˆë‹¤.");
 			} else if(buylist.size() == 1){
 				if (s.name.equals(buylist.get(0).getName())) {
-					JOptionPane.showMessageDialog(null, "ÀÌ¹Ì Àå¹Ù±¸´Ï¿¡ ÀÖ´Â »óÇ°ÀÔ´Ï´Ù.");
+					JOptionPane.showMessageDialog(null, "ì´ë¯¸ ì¥ë°”êµ¬ë‹ˆì— ìˆëŠ” ìƒí’ˆì…ë‹ˆë‹¤.");
 					pCount--;
 				} else {
 					buylist.add(s);
-					JOptionPane.showMessageDialog(null, s.getName() + " À»(¸¦) Àå¹Ù±¸´Ï¿¡ ´ã¾Ò½À´Ï´Ù.");
+					JOptionPane.showMessageDialog(null, s.getName() + " ì„(ë¥¼) ì¥ë°”êµ¬ë‹ˆì— ë‹´ì•˜ìŠµë‹ˆë‹¤.");
 					}
 			} else if(buylist.size() == 2) {
 				if (s.name.equals(buylist.get(0).getName()) || s.name.equals(buylist.get(1).getName())) {
-					JOptionPane.showMessageDialog(null, "ÀÌ¹Ì Àå¹Ù±¸´Ï¿¡ ÀÖ´Â »óÇ°ÀÔ´Ï´Ù.");
+					JOptionPane.showMessageDialog(null, "ì´ë¯¸ ì¥ë°”êµ¬ë‹ˆì— ìˆëŠ” ìƒí’ˆì…ë‹ˆë‹¤.");
 					pCount--;
 				} else {
 					buylist.add(s);
-					JOptionPane.showMessageDialog(null, s.getName() + " À»(¸¦) Àå¹Ù±¸´Ï¿¡ ´ã¾Ò½À´Ï´Ù.");
+					JOptionPane.showMessageDialog(null, s.getName() + " ì„(ë¥¼) ì¥ë°”êµ¬ë‹ˆì— ë‹´ì•˜ìŠµë‹ˆë‹¤.");
 				}
 			} else if(buylist.size() == 3) {
 				if (s.name.equals(buylist.get(0).getName()) || s.name.equals(buylist.get(1).getName())
 						|| s.name.equals(buylist.get(2).getName())) {
-					JOptionPane.showMessageDialog(null, "ÀÌ¹Ì Àå¹Ù±¸´Ï¿¡ ÀÖ´Â »óÇ°ÀÔ´Ï´Ù.");
+					JOptionPane.showMessageDialog(null, "ì´ë¯¸ ì¥ë°”êµ¬ë‹ˆì— ìˆëŠ” ìƒí’ˆì…ë‹ˆë‹¤.");
 					pCount--;
 				} else {
 					buylist.add(s);
-					JOptionPane.showMessageDialog(null, s.getName() + " À»(¸¦) Àå¹Ù±¸´Ï¿¡ ´ã¾Ò½À´Ï´Ù.");
+					JOptionPane.showMessageDialog(null, s.getName() + " ì„(ë¥¼) ì¥ë°”êµ¬ë‹ˆì— ë‹´ì•˜ìŠµë‹ˆë‹¤.");
 				}
 			} else if(buylist.size() == 4) {
 				if (s.name.equals(buylist.get(1).getName()) || s.name.equals(buylist.get(1).getName())
 						|| s.name.equals(buylist.get(2).getName()) || s.name.equals(buylist.get(3).getName())) {
-					JOptionPane.showMessageDialog(null, "ÀÌ¹Ì Àå¹Ù±¸´Ï¿¡ ÀÖ´Â »óÇ°ÀÔ´Ï´Ù.");
+					JOptionPane.showMessageDialog(null, "ì´ë¯¸ ì¥ë°”êµ¬ë‹ˆì— ìˆëŠ” ìƒí’ˆì…ë‹ˆë‹¤.");
 					pCount--;
 				} else {
 					buylist.add(s);
-					JOptionPane.showMessageDialog(null, s.getName() + " À»(¸¦) Àå¹Ù±¸´Ï¿¡ ´ã¾Ò½À´Ï´Ù.");
+					JOptionPane.showMessageDialog(null, s.getName() + " ì„(ë¥¼) ì¥ë°”êµ¬ë‹ˆì— ë‹´ì•˜ìŠµë‹ˆë‹¤.");
 				}
 			}
 		}
 	}
-
-	public static void clear() {
-		buylist.clear();
-		JOptionPane.showMessageDialog(null, "Àå¹Ù±¸´Ï¸¦ ºñ¿ü½À´Ï´Ù.");
-	}
-	
 }

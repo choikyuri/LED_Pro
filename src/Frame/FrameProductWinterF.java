@@ -24,13 +24,13 @@ public class FrameProductWinterF extends JFrame {
 		public ProWiDpF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ∑Œ∞ÌµÈ
+			// Î°úÍ≥†Îì§
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// ªÛ¥‹ ≈∏¿Ã∆≤
-			ImageIcon widp = new ImageIcon("image/product/∞‹µˆ.png");
+			// ÏÉÅÎã® ÌÉÄÏù¥ÌãÄ
+			ImageIcon widp = new ImageIcon("image/product/Í≤®Îî•.png");
 			JLabel wiDeep = new JLabel(widp);
 			wiDeep.setBounds(115, 70, 350, 110);
 			frame.add(wiDeep);
@@ -51,11 +51,11 @@ public class FrameProductWinterF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/f∞‹µˆ1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fÍ≤®Îî•1.png");
 					JLabel dpSet1 = new JLabel(set1);
 					dpSet1.setBounds(25, 25, 485, 485);
 					newF.add(dpSet1);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/108.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -69,11 +69,11 @@ public class FrameProductWinterF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/f∞‹µˆ2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fÍ≤®Îî•2.png");
 					JLabel dpSet2 = new JLabel(set2);
 					dpSet2.setBounds(25, 25, 485, 485);
 					newF.add(dpSet2);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/86.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -87,11 +87,11 @@ public class FrameProductWinterF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/f∞‹µˆ3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fÍ≤®Îî•3.png");
 					JLabel dpSet3 = new JLabel(set3);
 					dpSet3.setBounds(25, 25, 485, 485);
 					newF.add(dpSet3);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/116.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -103,7 +103,7 @@ public class FrameProductWinterF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop widpf1 = new Shop("Winter Deep Set1(F)", 108,
-							new JLabel(new ImageIcon("image/product/fcart/f∞‹µˆ1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÍ≤®Îî•1.png")));
 					MyShop.pCount++;
 					MyShop.add(widpf1);
 				}
@@ -112,7 +112,7 @@ public class FrameProductWinterF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop widpf2 = new Shop("Winter Deep Set2(F)", 86,
-							new JLabel(new ImageIcon("image/product/fcart/f∞‹µˆ2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÍ≤®Îî•2.png")));
 					MyShop.pCount++;
 					MyShop.add(widpf2);
 				}
@@ -121,13 +121,13 @@ public class FrameProductWinterF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop widpf3 = new Shop("Winter Deep Set3(F)", 116,
-							new JLabel(new ImageIcon("image/product/fcart/f∞‹µˆ3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÍ≤®Îî•3.png")));
 					MyShop.pCount++;
 					MyShop.add(widpf3);
 				}
 			});
 
-			// backπˆ∆∞
+			// backÎ≤ÑÌäº
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -138,10 +138,10 @@ public class FrameProductWinterF extends JFrame {
 					frame.dispose();
 				}
 			});
-			// mainπˆ∆∞
+			// mainÎ≤ÑÌäº
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// πË∞Ê»ø∞˙ √≥∏Æ
+			// Î∞∞Í≤ΩÌö®Í≥º Ï≤òÎ¶¨
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 
@@ -153,13 +153,13 @@ public class FrameProductWinterF extends JFrame {
 		public ProWiCoF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ∑Œ∞ÌµÈ
+			// Î°úÍ≥†Îì§
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// ªÛ¥‹ ≈∏¿Ã∆≤
-			ImageIcon wico = new ImageIcon("image/product/∞‹ƒ.png");
+			// ÏÉÅÎã® ÌÉÄÏù¥ÌãÄ
+			ImageIcon wico = new ImageIcon("image/product/Í≤®Ïø®.png");
 			JLabel wiCool = new JLabel(wico);
 			wiCool.setBounds(115, 70, 350, 110);
 			frame.add(wiCool);
@@ -180,11 +180,11 @@ public class FrameProductWinterF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/f∞‹ƒ1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fÍ≤®Ïø®1.png");
 					JLabel coSet1 = new JLabel(set1);
 					coSet1.setBounds(25, 25, 485, 485);
 					newF.add(coSet1);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/116.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -198,11 +198,11 @@ public class FrameProductWinterF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/f∞‹ƒ2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fÍ≤®Ïø®2.png");
 					JLabel coSet2 = new JLabel(set2);
 					coSet2.setBounds(25, 25, 485, 485);
 					newF.add(coSet2);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/134.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -216,11 +216,11 @@ public class FrameProductWinterF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/f∞‹ƒ3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fÍ≤®Ïø®3.png");
 					JLabel coSet3 = new JLabel(set3);
 					coSet3.setBounds(25, 25, 485, 485);
 					newF.add(coSet3);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/125.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -232,7 +232,7 @@ public class FrameProductWinterF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop wicof1 = new Shop("Winter Cool Set1(F)", 116,
-							new JLabel(new ImageIcon("image/product/fcart/f∞‹ƒ1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÍ≤®Ïø®1.png")));
 					MyShop.pCount++;
 					MyShop.add(wicof1);
 				}
@@ -241,7 +241,7 @@ public class FrameProductWinterF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop wicof2 = new Shop("Winter Cool Set2(F)", 134,
-							new JLabel(new ImageIcon("image/product/fcart/f∞‹ƒ2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÍ≤®Ïø®2.png")));
 					MyShop.pCount++;
 					MyShop.add(wicof2);
 				}
@@ -250,13 +250,13 @@ public class FrameProductWinterF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop wicof3 = new Shop("Winter Cool Set3(F)", 125,
-							new JLabel(new ImageIcon("image/product/fcart/f∞‹ƒ3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÍ≤®Ïø®3.png")));
 					MyShop.pCount++;
 					MyShop.add(wicof3);
 				}
 			});
 
-			// backπˆ∆∞
+			// backÎ≤ÑÌäº
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -267,10 +267,10 @@ public class FrameProductWinterF extends JFrame {
 					frame.dispose();
 				}
 			});
-			// mainπˆ∆∞
+			// mainÎ≤ÑÌäº
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// πË∞Ê»ø∞˙ √≥∏Æ
+			// Î∞∞Í≤ΩÌö®Í≥º Ï≤òÎ¶¨
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 
@@ -282,13 +282,13 @@ public class FrameProductWinterF extends JFrame {
 		public ProWiBrF() {
 			BaseSet frame = new BaseSet();
 			ProductSet set = new ProductSet();
-			// ∑Œ∞ÌµÈ
+			// Î°úÍ≥†Îì§
 			JLabel lblImage = new JLabel();
 			JButton lblLED = new JButton();
 			JButton lblTitle = new JButton();
 			frame.logoSet(lblImage, lblLED, lblTitle);
-			// ªÛ¥‹ ≈∏¿Ã∆≤
-			ImageIcon wibr = new ImageIcon("image/product/∞‹∫Í.png");
+			// ÏÉÅÎã® ÌÉÄÏù¥ÌãÄ
+			ImageIcon wibr = new ImageIcon("image/product/Í≤®Î∏å.png");
 			JLabel wiBight = new JLabel(wibr);
 			wiBight.setBounds(115, 70, 350, 110);
 			frame.add(wiBight);
@@ -309,11 +309,11 @@ public class FrameProductWinterF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set1");
-					ImageIcon set1 = new ImageIcon("image/product/female/f∞‹∫Í1.png");
+					ImageIcon set1 = new ImageIcon("image/product/female/fÍ≤®Î∏å1.png");
 					JLabel brSet1 = new JLabel(set1);
 					brSet1.setBounds(25, 25, 485, 485);
 					newF.add(brSet1);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/108.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -327,11 +327,11 @@ public class FrameProductWinterF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set2");
-					ImageIcon set2 = new ImageIcon("image/product/female/f∞‹∫Í2.png");
+					ImageIcon set2 = new ImageIcon("image/product/female/fÍ≤®Î∏å2.png");
 					JLabel brSet2 = new JLabel(set2);
 					brSet2.setBounds(25, 25, 485, 485);
 					newF.add(brSet2);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/116.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -345,11 +345,11 @@ public class FrameProductWinterF extends JFrame {
 					JFrame newF = new JFrame();
 					set.newFrame(newF);
 					newF.setTitle("Set3");
-					ImageIcon set3 = new ImageIcon("image/product/female/f∞‹∫Í3.png");
+					ImageIcon set3 = new ImageIcon("image/product/female/fÍ≤®Î∏å3.png");
 					JLabel brSet3 = new JLabel(set3);
 					brSet3.setBounds(25, 25, 485, 485);
 					newF.add(brSet3);
-					// ∞°∞› ¿ÃπÃ¡ˆ
+					// Í∞ÄÍ≤© Ïù¥ÎØ∏ÏßÄ
 					ImageIcon price = new ImageIcon("image/product/price/93.png");
 					JLabel lblPrice = new JLabel(price);
 					lblPrice.setBounds(80, 530, 350, 100);
@@ -361,7 +361,7 @@ public class FrameProductWinterF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop wibrf1 = new Shop("Winter Bright Set1(F)", 108,
-							new JLabel(new ImageIcon("image/product/fcart/f∞‹∫Í1.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÍ≤®Î∏å1.png")));
 					MyShop.pCount++;
 					MyShop.add(wibrf1);
 				}
@@ -370,7 +370,7 @@ public class FrameProductWinterF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop wibrf2 = new Shop("Winter Bright Set2(F)", 116,
-							new JLabel(new ImageIcon("image/product/fcart/f∞‹∫Í2.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÍ≤®Î∏å2.png")));
 					MyShop.pCount++;
 					MyShop.add(wibrf2);
 				}
@@ -379,13 +379,13 @@ public class FrameProductWinterF extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					Shop wibrf3 = new Shop("Winter Bright Set3(F)", 93,
-							new JLabel(new ImageIcon("image/product/fcart/f∞‹∫Í3.png")));
+							new JLabel(new ImageIcon("image/product/fcart/fÍ≤®Î∏å3.png")));
 					MyShop.pCount++;
 					MyShop.add(wibrf3);
 				}
 			});
 
-			// backπˆ∆∞
+			// backÎ≤ÑÌäº
 			JButton btnBack = new JButton();
 			frame.goBack(btnBack);
 
@@ -396,10 +396,10 @@ public class FrameProductWinterF extends JFrame {
 					frame.dispose();
 				}
 			});
-			// mainπˆ∆∞
+			// mainÎ≤ÑÌäº
 			JButton btnMain = new JButton();
 			frame.goMain(btnMain);
-			// πË∞Ê»ø∞˙ √≥∏Æ
+			// Î∞∞Í≤ΩÌö®Í≥º Ï≤òÎ¶¨
 			JLabel effect = new JLabel();
 			frame.backEffect(effect);
 

@@ -20,12 +20,12 @@ import javax.swing.JTextField;
 
 public class FrameChatClient extends JFrame implements Runnable {
 
-	// È­¸é±¸¼º : Å¬¶óÀÌ¾ðÆ®ÀÇ ¸Þ¼¼Áö¸¦ JFrameÀ¸·Î º¸³¿(send_bt) -> ¼­¹ö°¡ CopyClient¤·¿¡°Ô Àü´Þ
-	JTextArea area; // Ã¤ÆÃ ³»¿ë Ãâ·Â
-	JTextField input; // ¸Þ¼¼Áö ÀÔ·Â
-	JButton send_bt; // ¸Þ¼¼Áö Àü¼Û¹öÆ°
+	// í™”ë©´êµ¬ì„± : í´ë¼ì´ì–¸íŠ¸ì˜ ë©”ì„¸ì§€ë¥¼ JFrameìœ¼ë¡œ ë³´ëƒ„(send_bt) -> ì„œë²„ê°€ CopyClientã…‡ì—ê²Œ ì „ë‹¬
+	JTextArea area; // ì±„íŒ… ë‚´ìš© ì¶œë ¥
+	JTextField input; // ë©”ì„¸ì§€ ìž…ë ¥
+	JButton send_bt; // ë©”ì„¸ì§€ ì „ì†¡ë²„íŠ¼
 	JPanel south_p;
-	// ¼­¹ö Á¢¼ÓÀ» À§ÇÑ °´Ã¼µé
+	// ì„œë²„ ì ‘ì†ì„ ìœ„í•œ ê°ì²´ë“¤
 	Socket s;
 	BufferedReader in;
 	PrintWriter out;
@@ -35,10 +35,10 @@ public class FrameChatClient extends JFrame implements Runnable {
 		area = new JTextArea();
 		this.add(area);
 
-		// BorderLayout ¹èÄ¡ÀÌ¿ë
-		south_p = new JPanel(new BorderLayout());// ÆÐ³Î »ý¼º
-		south_p.add(input = new JTextField()); // ÆÐ³ÎÀÇ °¡¿îµ¥ ÀÔ·Â»óÀÚ Ãß°¡
-		south_p.add(send_bt = new JButton("º¸³»±â"), BorderLayout.EAST); // ÆÐ³Î¿¡ ¹öÆ° Ãß°¡
+		// BorderLayout ë°°ì¹˜ì´ìš©
+		south_p = new JPanel(new BorderLayout());// íŒ¨ë„ ìƒì„±
+		south_p.add(input = new JTextField()); // íŒ¨ë„ì˜ ê°€ìš´ë° ìž…ë ¥ìƒìž ì¶”ê°€
+		south_p.add(send_bt = new JButton("ë³´ë‚´ê¸°"), BorderLayout.EAST); // íŒ¨ë„ì— ë²„íŠ¼ ì¶”ê°€
 
 		this.add(south_p, BorderLayout.SOUTH);
 
@@ -54,7 +54,7 @@ public class FrameChatClient extends JFrame implements Runnable {
 		send_bt.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// ¸Þ¼¼Áö°¡ ¼­¹ö·Î ³Ñ¾î°¡´Â ¸Þ¼­µå ±¸ÇöºÎ
+				// ë©”ì„¸ì§€ê°€ ì„œë²„ë¡œ ë„˜ì–´ê°€ëŠ” ë©”ì„œë“œ êµ¬í˜„ë¶€
 				sendData();
 
 			}
@@ -65,18 +65,18 @@ public class FrameChatClient extends JFrame implements Runnable {
 				400, 600);
 		setVisible(true);
 		area.setBackground(new Color(226, 224, 222));
-		connected(); // »ý¼ºÀÚ¿¡¼­ ¸Þ¼­µå¸¦ È£ÃâÇÏ¿© ¼­¹ö¿¡ Á¢¼Ó¿äÃ»
+		connected(); // ìƒì„±ìžì—ì„œ ë©”ì„œë“œë¥¼ í˜¸ì¶œí•˜ì—¬ ì„œë²„ì— ì ‘ì†ìš”ì²­
 
 		t = new Thread(this);
-		t.start(); // ¸Þ¼¼Áö ´ë±â
+		t.start(); // ë©”ì„¸ì§€ ëŒ€ê¸°
 	}
 
 	private void connected() {
 
 		try {
-			// ¼­¹öÁ¢¼Ó
-			s = new Socket("192.168.219.107", 8888);
-			out = new PrintWriter(s.getOutputStream(), true); // true : append(Ãß°¡)
+			// ì„œë²„ì ‘ì†
+			s = new Socket("172.16.10.18", 2222);
+			out = new PrintWriter(s.getOutputStream(), true); // true : append(ì¶”ê°€)
 			in = new BufferedReader(new InputStreamReader(s.getInputStream()));
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -89,29 +89,29 @@ public class FrameChatClient extends JFrame implements Runnable {
 
 	@Override
 	public void run() {
-		// ¸Þ¼¼Áö°¡ µµÂøÇÏ¸é È­¸é¿¡ »Ñ¸²
+		// ë©”ì„¸ì§€ê°€ ë„ì°©í•˜ë©´ í™”ë©´ì— ë¿Œë¦¼
 		while (true) {
 			try {
-				String msg = in.readLine();// ´ë±â»óÅÂ
+				String msg = in.readLine();// ëŒ€ê¸°ìƒíƒœ
 				if (msg.equals("xx:~X"))
 					break;
 				if (msg != null)
-					area.append(msg + "\r\n");// À©µµ¿ì¿¡¼­ ´ÙÀ½¶óÀÎÀ¸·Î ³Ñ±è
+					area.append(msg + "\r\n");// ìœˆë„ìš°ì—ì„œ ë‹¤ìŒë¼ì¸ìœ¼ë¡œ ë„˜ê¹€
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
-		closed(); // ¿­·ÁÀÖ´Â ½ºÆ®¸² ¸ðµÎ ´Ý±â
+		closed(); // ì—´ë ¤ìžˆëŠ” ìŠ¤íŠ¸ë¦¼ ëª¨ë‘ ë‹«ê¸°
 	}
 
-	// ÀÛ¼ºµÈ ¸Þ¼¼Áö º¸³¿
+	// ìž‘ì„±ëœ ë©”ì„¸ì§€ ë³´ëƒ„
 	public void sendData() {
 
 		String msg = input.getText().trim();
 		if (msg.length() > 0) {
 			out.println(msg);
 		}
-		input.setText("");// Ã»¼Ò
+		input.setText("");// ì²­ì†Œ
 	}
 
 	// closed
